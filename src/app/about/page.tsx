@@ -3,8 +3,6 @@ import {
   ShieldIcon, 
   TrophyIcon, 
   UsersIcon, 
-  CheckIcon,
-  ArrowRightIcon,
   StarIcon
 } from "@/components/icons";
 
@@ -32,21 +30,32 @@ const milestones = [
   { year: "2022", event: "Expanded to cover all major Salesforce certifications" },
   { year: "2023", event: "10,000+ professionals passed with our materials" },
   { year: "2024", event: "Launched updated content with AI-powered study guides" },
+  { year: "2025", event: "Continuing to innovate and support Salesforce professionals worldwide" },
 ];
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="gradient-hero py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative pt-12 pb-48 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEhIkvJ6PMfQw6og0NmzqWV1cLUEjqPsdv0vEW_jpI1lsYqrzSfT9kUtQfncb680FIc6ISDOoIttWsXdR7kktBqC7SPWBpZjQ2fldnCz2WB0OQHwbHHryzSXXcz3kEWuiQS3_hQjG5Duyw78HSvHRHXVdr2304fqmqy8JrdaBmCH8TdLM81wvOBH978BblX0=s16000"
+            alt="About Background"
+            className="w-full h-full object-cover object-bottom"
+            style={{ display: 'block' }}
+          />
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               About Salesforce Dumps
             </h1>
-            <p className="text-xl text-white/90">
-              We&apos;re on a mission to help Salesforce professionals achieve their certification goals 
-              with high-quality, accurate exam preparation materials.
+            <p className="text-white/90">
+              We&apos;re on a mission to help Salesforce professionals achieve their certification goals
             </p>
           </div>
         </div>
@@ -81,48 +90,36 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-[#0176D3] to-[#032D60] rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-6">Our Numbers</h3>
-              <div className="grid grid-cols-2 gap-6">
-                {[
-                  { value: "10K+", label: "Students Passed" },
-                  { value: "50+", label: "Certifications" },
-                  { value: "98%", label: "Pass Rate" },
-                  { value: "3000+", label: "Questions" },
-                ].map((stat) => (
-                  <div key={stat.label}>
-                    <div className="text-3xl font-bold text-[#FE9339]">{stat.value}</div>
-                    <div className="text-white/80 text-sm">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
+            <div className="grid grid-cols-2 gap-8">
+              {[
+                { value: "10K+", label: "Students Passed" },
+                { value: "50+", label: "Certifications" },
+                { value: "98%", label: "Pass Rate" },
+                { value: "3000+", label: "Questions" },
+              ].map((stat, index) => (
+                <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
+                  <div className="text-5xl font-bold text-[#0176D3] mb-2">{stat.value}</div>
+                  <div className="text-[#444444] text-lg">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Values */}
-      <section className="py-20 bg-[#F3F3F3]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#0176D3]/10 text-[#0176D3] text-sm font-semibold px-4 py-1 rounded-full mb-4">
-              OUR VALUES
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#032D60] mb-4">
-              What We Stand For
-            </h2>
-          </div>
-
+      <section className="bg-[#EEF4FF] py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#032D60] mb-4">
+            What We Stand For
+          </h2>
+          <p className="text-xl text-[#032D60] mb-12">
+            Our core values that drive everything we do:
+          </p>
+          
           <div className="grid md:grid-cols-3 gap-8">
             {values.map((value, index) => (
-              <div
-                key={value.title}
-                className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s`, opacity: 0, animationFillMode: "forwards" }}
-              >
-                <div className="w-16 h-16 rounded-2xl bg-[#0176D3]/10 flex items-center justify-center mx-auto mb-4 text-[#0176D3]">
-                  {value.icon}
-                </div>
+              <div key={value.title} className="bg-white rounded-2xl p-8 shadow-sm border-t-[5px] border-[#032D60]">
                 <h3 className="text-xl font-bold text-[#032D60] mb-3">{value.title}</h3>
                 <p className="text-[#444444]">{value.description}</p>
               </div>
@@ -132,8 +129,35 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 bg-white min-h-[70vh]">
+        {/* Gradient Overlay - Back Layer */}
+        <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 1, background: 'linear-gradient(180deg, #fff 29.72%, #c6e9ff 100%)' }}></div>
+
+        {/* Background Images - Middle Layer */}
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden flex items-end" style={{ zIndex: 2 }}>
+          {/* Left Background Image */}
+          <div className="relative w-1/2 flex items-end justify-start">
+            <img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEiFnsCNGs4yaLiFVQ5hweAk3glhBgPKJVWdEz8j5uIqgIUuhv_MpSSMpS0TwbP730LM2KK0LJB5HBDtRzgy9owiil8chbhUFLoMY-LFNmSpZsZctDozm6j0raBclcrYTDdCw0QLRjISGhtYp6mCNfPVpvw-qTYgNQIT9768HGkfPoG_dQTXL2Sxg6akG0LX=s16000"
+              alt="Left Background"
+              className="max-h-[70vh] w-auto object-contain"
+              style={{ display: 'block', margin: 0, padding: 0, verticalAlign: 'bottom' }}
+            />
+          </div>
+          
+          {/* Right Background Image */}
+          <div className="relative w-1/2 flex items-end justify-end">
+            <img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEgl6lLCGsii8kyyUQQyyoSN7fxq0r49_87r6JKy23dlgFqsqdNHXlrc4SNenDgJF6fk9OimJ36NvANwxMZU3SgsFL8pMYICG5Iy3WHf5U7xoQSCyXKu5KA60otm_-bM-oxdm3hGgHiSuu19wLTUDZFUMMsR6deqMwM9kRg4g6OH6VAo4bBFNxwk2SxV9h6f=s16000"
+              alt="Right Background"
+              className="max-h-[70vh] w-auto object-contain"
+              style={{ display: 'block', margin: 0, padding: 0, verticalAlign: 'bottom' }}
+            />
+          </div>
+        </div>
+
+        {/* Content - Front Layer */}
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" style={{ zIndex: 3 }}>
           <div className="text-center mb-12">
             <span className="inline-block bg-[#0176D3]/10 text-[#0176D3] text-sm font-semibold px-4 py-1 rounded-full mb-4">
               OUR JOURNEY
@@ -165,82 +189,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 bg-[#F3F3F3]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-block bg-[#0176D3]/10 text-[#0176D3] text-sm font-semibold px-4 py-1 rounded-full mb-4">
-                WHY CHOOSE US
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#032D60] mb-6">
-                The Salesforce Dumps Advantage
-              </h2>
-              <div className="space-y-4">
-                {[
-                  "Real exam questions verified by certified professionals",
-                  "Detailed explanations for every answer",
-                  "Regular updates to match latest exam versions",
-                  "98% pass rate among our users",
-                  "Instant access after purchase",
-                  "Money-back guarantee if you don't pass",
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckIcon className="w-6 h-6 text-[#2E844A] flex-shrink-0" />
-                    <span className="text-[#333333]">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { icon: <StarIcon className="w-8 h-8" />, value: "4.9/5", label: "Average Rating" },
-                { icon: <UsersIcon className="w-8 h-8" />, value: "10K+", label: "Happy Customers" },
-                { icon: <TrophyIcon className="w-8 h-8" />, value: "98%", label: "Pass Rate" },
-                { icon: <ShieldIcon className="w-8 h-8" />, value: "100%", label: "Satisfaction" },
-              ].map((stat) => (
-                <div
-                  key={stat.label}
-                  className="bg-white rounded-2xl p-6 text-center shadow-lg"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-[#0176D3]/10 flex items-center justify-center mx-auto mb-3 text-[#0176D3]">
-                    {stat.icon}
-                  </div>
-                  <div className="text-2xl font-bold text-[#032D60]">{stat.value}</div>
-                  <div className="text-sm text-[#5C5C5C]">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 gradient-hero">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Start Your Certification Journey?
-          </h2>
-          <p className="text-white/90 mb-8">
-            Join thousands of successful Salesforce professionals
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/dumps"
-              className="bg-[#FE9339] hover:bg-[#E85C4A] text-white font-bold py-4 px-8 rounded-lg transition-all duration-200 hover:scale-105 inline-flex items-center justify-center gap-2"
-            >
-              Browse Exam Dumps
-              <ArrowRightIcon className="w-5 h-5" />
-            </Link>
-            <Link
-              href="/contact"
-              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white font-bold py-4 px-8 rounded-lg transition-all duration-200 inline-flex items-center justify-center gap-2"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

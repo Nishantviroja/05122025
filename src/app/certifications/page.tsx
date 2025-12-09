@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { certifications, categories } from "@/data/certifications";
 import { ChevronDownIcon } from "@/components/icons";
 
@@ -83,30 +84,17 @@ export default function CertificationsPage() {
               </div>
             </div>
 
-            {/* Right - Illustration */}
-            <div className="hidden lg:flex justify-center">
-              <div className="relative">
-                {/* Badge Circle */}
-                <div className="w-80 h-80 rounded-full bg-gradient-to-br from-[#032D60] to-[#0176D3] flex items-center justify-center relative overflow-hidden">
-                  {/* Cloud decorations */}
-                  <div className="absolute top-8 left-8 w-8 h-6 bg-white/20 rounded-full"></div>
-                  <div className="absolute top-16 right-12 w-6 h-4 bg-white/20 rounded-full"></div>
-                  
-                  {/* Certified Badge */}
-                  <div className="bg-[#9050E9] text-white px-8 py-4 rounded-lg text-center transform -rotate-3">
-                    <div className="text-2xl font-bold tracking-wider">CERTIFIED</div>
-                    <div className="text-sm mt-1">Professional</div>
-                  </div>
-                  
-                  {/* Decorative elements */}
-                  <div className="absolute bottom-12 left-1/4 w-3 h-3 bg-white/30 rounded-full"></div>
-                  <div className="absolute bottom-20 right-1/4 w-2 h-2 bg-white/40 rounded-full"></div>
-                </div>
-                
-                {/* Character illustration placeholder */}
-                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-[#E5E5E5] to-[#C9C9C9] rounded-full flex items-center justify-center">
-                  <span className="text-4xl">🤖</span>
-                </div>
+            {/* Right - Image */}
+            <div className="hidden lg:flex justify-center items-center">
+              <div className="relative w-full max-w-lg">
+                <Image
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEhEJv0vwqbuJMvgTJRNVwBnO323d2VzDPGos5bD_2H2XYknEhHiOHSn2L9ECBLlCOwxCmfvP2LaKsh4-MmiYUh0vrRJWQto3cZtXtoiH_ilY7UcITM_OWC37pAyta20597a3J0o6hwTJ-c6lTh6lz53-PguZ2HsgUe4VR9amzuGm9wTTmwfppYSaTwiZB_Y=s16000"
+                  alt="Salesforce Certifications"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto rounded-lg object-contain"
+                  unoptimized
+                />
               </div>
             </div>
           </div>
@@ -186,8 +174,35 @@ export default function CertificationsPage() {
       </section>
 
       {/* Certification Categories */}
-      <section className="bg-[#F3F3F3] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-[#FFFFFF] py-16 min-h-[70vh]">
+        {/* Gradient Overlay - Back Layer */}
+        <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 1, background: 'linear-gradient(180deg, #fff 29.72%, #c6e9ff 100%)' }}></div>
+
+        {/* Background Images - Middle Layer */}
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden flex items-end" style={{ zIndex: 2 }}>
+          {/* Left Background Image */}
+          <div className="relative w-1/2 flex items-end justify-start">
+            <img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEiFnsCNGs4yaLiFVQ5hweAk3glhBgPKJVWdEz8j5uIqgIUuhv_MpSSMpS0TwbP730LM2KK0LJB5HBDtRzgy9owiil8chbhUFLoMY-LFNmSpZsZctDozm6j0raBclcrYTDdCw0QLRjISGhtYp6mCNfPVpvw-qTYgNQIT9768HGkfPoG_dQTXL2Sxg6akG0LX=s16000"
+              alt="Left Background"
+              className="max-h-[70vh] w-auto object-contain"
+              style={{ display: 'block', margin: 0, padding: 0, verticalAlign: 'bottom' }}
+            />
+          </div>
+          
+          {/* Right Background Image */}
+          <div className="relative w-1/2 flex items-end justify-end">
+            <img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEgl6lLCGsii8kyyUQQyyoSN7fxq0r49_87r6JKy23dlgFqsqdNHXlrc4SNenDgJF6fk9OimJ36NvANwxMZU3SgsFL8pMYICG5Iy3WHf5U7xoQSCyXKu5KA60otm_-bM-oxdm3hGgHiSuu19wLTUDZFUMMsR6deqMwM9kRg4g6OH6VAo4bBFNxwk2SxV9h6f=s16000"
+              alt="Right Background"
+              className="max-h-[70vh] w-auto object-contain"
+              style={{ display: 'block', margin: 0, padding: 0, verticalAlign: 'bottom' }}
+            />
+          </div>
+        </div>
+
+        {/* Content - Front Layer */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ zIndex: 3 }}>
           <h2 className="text-2xl md:text-3xl font-bold text-[#032D60] mb-8 text-center">
             Certification Categories
           </h2>
@@ -196,7 +211,7 @@ export default function CertificationsPage() {
             {categories.map((category) => (
               <div
                 key={category.id}
-                className="bg-white rounded-xl p-6 hover:shadow-lg transition-shadow"
+                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow border border-gray-100"
               >
                 <h3 className="text-xl font-bold text-[#032D60] mb-2">
                   {category.title}
@@ -250,32 +265,6 @@ export default function CertificationsPage() {
                 )}
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="gradient-hero py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Get Certified?
-          </h2>
-          <p className="text-white/90 mb-8 text-lg">
-            Start preparing for your Salesforce certification exam today with our premium dumps.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/dumps"
-              className="inline-flex items-center px-8 py-3 bg-[#FE9339] text-white font-semibold rounded hover:bg-[#E85C4A] transition-colors"
-            >
-              Browse Exam Dumps
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center px-8 py-3 bg-white/10 border border-white/30 text-white font-semibold rounded hover:bg-white/20 transition-colors"
-            >
-              Contact Us
-            </Link>
           </div>
         </div>
       </section>

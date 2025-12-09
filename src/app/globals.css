@@ -113,6 +113,19 @@ p {
   color: var(--sf-gray-700);
 }
 
+/* Footer text should be white */
+footer p {
+  color: white !important;
+}
+
+footer a {
+  color: white !important;
+}
+
+footer h3 {
+  color: white !important;
+}
+
 /* Gradient Hero */
 .gradient-hero {
   background: linear-gradient(135deg, var(--sf-navy) 0%, var(--sf-blue) 100%);
