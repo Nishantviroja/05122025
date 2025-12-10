@@ -109,16 +109,24 @@ export default function HomePage() {
             {featuredDumps.map((dump) => (
               <Link
                 key={dump.id}
-                href={`/dumps/${dump.id}`}
+                href={`/${dump.id}`}
                 className="bg-white rounded-xl border border-[#E5E5E5] p-6 hover:shadow-lg transition-shadow group"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <CertificationIcon color={
-                    dump.color === "blue" ? "#0176D3" :
-                    dump.color === "green" ? "#2E844A" :
-                    dump.color === "orange" ? "#FE9339" :
-                    "#9050E9"
-                  } />
+                  {dump.certificationIMG ? (
+                    <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100">
+                      <Image
+                        src={dump.certificationIMG}
+                        alt={dump.title}
+                        width={40}
+                        height={40}
+                        className="w-full h-full object-contain"
+                        unoptimized
+                      />
+                    </div>
+                  ) : (
+                    <CertificationIcon color="#0176D3" />
+                  )}
                   <span className="text-sm text-[#5C5C5C]">Exam Dump</span>
                 </div>
                 

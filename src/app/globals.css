@@ -157,6 +157,43 @@ footer h3 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
+/* HTML Content Styling for Exam Details and Resources */
+.exam-content strong {
+  color: var(--sf-navy);
+  font-weight: 600;
+}
+
+.exam-content a {
+  color: var(--sf-blue);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.exam-content a:hover {
+  color: var(--sf-blue-dark);
+  text-decoration: underline;
+}
+
+.exam-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exam-content li {
+  padding: 0.1rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.exam-content li::before {
+  content: "•";
+  color: var(--sf-blue-dark);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
 /* Button Styles */
 .btn-primary {
   background: var(--sf-blue);

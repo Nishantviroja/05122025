@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { certifications, categories } from "@/data/certifications";
+import { certifications } from "@/data/certifications";
+import { categories } from "@/data/categories";
 import { ChevronDownIcon } from "@/components/icons";
 
 // Certification icon component
@@ -133,16 +134,24 @@ export default function CertificationsPage() {
             {featuredCerts.map((cert) => (
               <Link
                 key={cert.id}
-                href={`/dumps/${cert.id}`}
+                href={`/${cert.id}`}
                 className="bg-white rounded-xl border border-[#E5E5E5] p-6 hover:shadow-lg transition-shadow group"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <CertificationIcon color={
-                    cert.color === "blue" ? "#0176D3" :
-                    cert.color === "green" ? "#2E844A" :
-                    cert.color === "orange" ? "#FE9339" :
-                    "#9050E9"
-                  } />
+                  {cert.certificationIMG ? (
+                    <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100">
+                      <Image
+                        src={cert.certificationIMG}
+                        alt={cert.title}
+                        width={40}
+                        height={40}
+                        className="w-full h-full object-contain"
+                        unoptimized
+                      />
+                    </div>
+                  ) : (
+                    <CertificationIcon color="#0176D3" />
+                  )}
                   <span className="text-sm text-[#5C5C5C]">Exam Dump</span>
                 </div>
                 

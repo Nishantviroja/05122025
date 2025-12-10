@@ -1,65 +1,5 @@
 import type { CertificationCardProps } from "@/components/ui/CertificationCard";
 
-export interface Category {
-  id: string;
-  title: string;
-  description: string;
-  certCount: number;
-  color: string;
-  bgColor: string;
-}
-
-export const categories: Category[] = [
-  {
-    id: "admin",
-    title: "Administrator",
-    description: "Master Salesforce administration, security, automation, and data management",
-    certCount: 6,
-    color: "text-sf-blue",
-    bgColor: "bg-sf-blue/10",
-  },
-  {
-    id: "developer",
-    title: "Developer",
-    description: "Build custom applications using Apex, Visualforce, and Lightning components",
-    certCount: 5,
-    color: "text-sf-green",
-    bgColor: "bg-sf-green/10",
-  },
-  {
-    id: "architect",
-    title: "Architect",
-    description: "Design enterprise-grade solutions and technical architectures",
-    certCount: 8,
-    color: "text-sf-purple",
-    bgColor: "bg-sf-purple/10",
-  },
-  {
-    id: "consultant",
-    title: "Consultant",
-    description: "Implement Salesforce solutions for Sales, Service, and Experience Cloud",
-    certCount: 7,
-    color: "text-sf-orange",
-    bgColor: "bg-sf-orange/10",
-  },
-  {
-    id: "marketing",
-    title: "Marketing Cloud",
-    description: "Manage digital marketing campaigns and customer journeys",
-    certCount: 4,
-    color: "text-sf-coral",
-    bgColor: "bg-sf-coral/10",
-  },
-  {
-    id: "analytics",
-    title: "Analytics",
-    description: "Build dashboards, reports, and AI-powered insights with Tableau CRM",
-    certCount: 3,
-    color: "text-sf-blue-light",
-    bgColor: "bg-sf-blue-light/10",
-  },
-];
-
 export const certifications: CertificationCardProps[] = [
   {
     id: "admin-certified",
@@ -73,7 +13,13 @@ export const certifications: CertificationCardProps[] = [
     price: 29,
     originalPrice: 49,
     badge: "BESTSELLER",
-    color: "blue",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The Salesforce Administrator certification is designed for professionals who configure and maintain Salesforce implementations. This exam validates your skills in security, data management, automation, and user management in the Salesforce platform.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 90 minutes</li><li><strong>Passing score:</strong> 65%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> None</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "advanced-admin",
@@ -86,7 +32,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.8,
     price: 35,
     originalPrice: 55,
-    color: "blue",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The Advanced Administrator certification is designed for experienced Salesforce administrators who want to demonstrate advanced skills in complex security configurations, data management, and automation solutions.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 90 minutes</li><li><strong>Passing score:</strong> 68%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> Salesforce Administrator</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "platform-dev-1",
@@ -100,7 +52,13 @@ export const certifications: CertificationCardProps[] = [
     price: 35,
     originalPrice: 59,
     badge: "HOT",
-    color: "green",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The Platform Developer I certification is designed for developers who build custom applications on the Salesforce Lightning Platform using Apex and Visualforce. This exam validates your skills in programming, debugging, and deploying custom solutions.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 105 minutes</li><li><strong>Passing score:</strong> 68%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> None</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "platform-dev-2",
@@ -113,7 +71,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.7,
     price: 45,
     originalPrice: 69,
-    color: "green",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$200.00, ¥25,000",
+    aboutCertification: "The Platform Developer II certification is designed for experienced developers who build complex, enterprise-grade applications on the Salesforce platform. This exam validates advanced skills in architecture, integration patterns, and testing strategies.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 120 minutes</li><li><strong>Passing score:</strong> 70%</li><li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 25,000</li><li><strong>Retake fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 25,000</li><li><strong>Prerequisite:</strong> Platform Developer I</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "sales-cloud-consultant",
@@ -126,7 +90,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.8,
     price: 39,
     originalPrice: 59,
-    color: "orange",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The Sales Cloud Consultant certification is designed for consultants who implement and configure Sales Cloud solutions. This exam validates your skills in lead management, opportunity management, forecasting, and sales processes.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 90 minutes</li><li><strong>Passing score:</strong> 68%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> Salesforce Administrator</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "service-cloud-consultant",
@@ -139,7 +109,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.8,
     price: 39,
     originalPrice: 59,
-    color: "orange",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The Service Cloud Consultant certification is designed for consultants who implement Service Cloud solutions for customer support organizations. This exam validates your skills in case management, knowledge base configuration, and service processes.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 90 minutes</li><li><strong>Passing score:</strong> 68%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> Salesforce Administrator</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "app-builder",
@@ -153,7 +129,13 @@ export const certifications: CertificationCardProps[] = [
     price: 32,
     originalPrice: 52,
     badge: "POPULAR",
-    color: "blue",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The Platform App Builder certification is designed for professionals who build custom applications using declarative tools on the Lightning Platform. This exam validates your skills in creating custom objects, workflows, and Lightning applications.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 90 minutes</li><li><strong>Passing score:</strong> 68%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> None</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "data-architect",
@@ -166,7 +148,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.6,
     price: 55,
     originalPrice: 79,
-    color: "purple",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$200.00, ¥25,000",
+    aboutCertification: "The Data Architect certification is designed for architects who design and implement data models for enterprise Salesforce implementations. This exam validates your skills in data modeling, data governance, and data management best practices.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 120 minutes</li><li><strong>Passing score:</strong> 70%</li><li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 25,000</li><li><strong>Retake fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 25,000</li><li><strong>Prerequisite:</strong> Salesforce Administrator</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "integration-architect",
@@ -179,7 +167,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.7,
     price: 55,
     originalPrice: 79,
-    color: "purple",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$200.00, ¥25,000",
+    aboutCertification: "The Integration Architect certification is designed for architects who design and implement integration solutions on the Salesforce Platform. This exam validates your skills in integration patterns, API design, and data synchronization strategies.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 120 minutes</li><li><strong>Passing score:</strong> 70%</li><li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 25,000</li><li><strong>Retake fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 25,000</li><li><strong>Prerequisite:</strong> Salesforce Administrator</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "marketing-cloud-email",
@@ -192,7 +186,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.8,
     price: 42,
     originalPrice: 62,
-    color: "orange",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The Marketing Cloud Email Specialist certification is designed for professionals who create and manage email marketing campaigns using Marketing Cloud Email Studio. This exam validates your skills in email design, automation, and deliverability best practices.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 90 minutes</li><li><strong>Passing score:</strong> 68%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> None</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "experience-cloud",
@@ -205,7 +205,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.7,
     price: 39,
     originalPrice: 59,
-    color: "orange",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The Experience Cloud Consultant certification is designed for consultants who build branded community sites and portals using Experience Cloud. This exam validates your skills in site configuration, member management, and community engagement features.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 90 minutes</li><li><strong>Passing score:</strong> 68%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> Salesforce Administrator</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
   {
     id: "javascript-developer",
@@ -218,128 +224,13 @@ export const certifications: CertificationCardProps[] = [
     rating: 4.8,
     price: 35,
     originalPrice: 55,
-    color: "green",
-  },
-];
-
-export const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "Salesforce Admin",
-    company: "TechCorp Inc.",
-    content: "These dumps were incredibly accurate! I passed my Admin certification on the first attempt with a score of 87%. The explanations helped me understand concepts deeply.",
-    rating: 5,
-    avatar: "SJ",
-    certification: "Administrator",
-  },
-  {
-    name: "Michael Chen",
-    role: "Senior Developer",
-    company: "CloudWorks",
-    content: "Platform Developer II was tough, but these dumps covered every topic. The questions were almost identical to the real exam. Highly recommended!",
-    rating: 5,
-    avatar: "MC",
-    certification: "Platform Developer II",
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Solution Architect",
-    company: "Innovate Labs",
-    content: "I've used many dump providers, but this one stands out. Updated content, clear explanations, and excellent customer support. Worth every penny.",
-    rating: 5,
-    avatar: "ER",
-    certification: "Data Architect",
-  },
-  {
-    name: "David Kim",
-    role: "Consultant",
-    company: "SF Experts",
-    content: "Passed Sales Cloud Consultant with 92%! The dumps were current and matched the exam format perfectly. Will definitely use for my next cert.",
-    rating: 5,
-    avatar: "DK",
-    certification: "Sales Cloud Consultant",
-  },
-];
-
-export const features = [
-  {
-    title: "Real Exam Questions",
-    description: "Actual questions from recent exams, verified by certified professionals who passed.",
-  },
-  {
-    title: "Detailed Explanations",
-    description: "Every answer includes comprehensive explanations to help you understand the concepts.",
-  },
-  {
-    title: "Regular Updates",
-    description: "Content is updated monthly to reflect the latest exam changes and new questions.",
-  },
-  {
-    title: "98% Pass Rate",
-    description: "Join thousands of professionals who passed their certification on the first attempt.",
-  },
-  {
-    title: "Instant Access",
-    description: "Get immediate access to your dumps after purchase. Study anytime, anywhere.",
-  },
-  {
-    title: "Money-Back Guarantee",
-    description: "If you don't pass after using our dumps, get a full refund. No questions asked.",
-  },
-];
-
-export const pricingPlans = [
-  {
-    name: "Single Cert",
-    price: 29,
-    period: "one-time",
-    description: "Perfect for passing one certification",
-    features: [
-      "1 Certification dump of choice",
-      "400+ real exam questions",
-      "Detailed answer explanations",
-      "90-day access",
-      "Free updates during access",
-      "Email support",
-    ],
-    cta: "Get Started",
-    href: "/dumps",
-  },
-  {
-    name: "Pro Bundle",
-    price: 79,
-    period: "one-time",
-    description: "Best value for career growth",
-    features: [
-      "Any 3 certifications of choice",
-      "1200+ real exam questions",
-      "Detailed answer explanations",
-      "180-day access",
-      "Free updates during access",
-      "Priority email support",
-      "Study guides included",
-    ],
-    cta: "Get Pro Bundle",
-    href: "/pricing",
-    popular: true,
-  },
-  {
-    name: "Unlimited",
-    price: 149,
-    period: "year",
-    description: "For serious Salesforce professionals",
-    features: [
-      "All certifications included",
-      "3000+ real exam questions",
-      "Detailed answer explanations",
-      "365-day access",
-      "Free updates always",
-      "24/7 priority support",
-      "Study guides & practice tests",
-      "New certs added free",
-    ],
-    cta: "Go Unlimited",
-    href: "/pricing",
+    certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
+    language: "English",
+    certificationPrice: "$150.00, ¥20,000",
+    aboutCertification: "The JavaScript Developer I certification is designed for developers who build Lightning Web Components using JavaScript. This exam validates your skills in JavaScript programming, component architecture, and modern web development practices.",
+    examDetails: "<ul><li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li><li><strong>Time allotted to complete the exam:</strong> 105 minutes</li><li><strong>Passing score:</strong> 68%</li><li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li><li><strong>Prerequisite:</strong> None</li></ul>",
+    resources: "<ul><li><a href='#'>Salesforce Certification Code of Conduct</a></li><li><a href='#'>Exam Reschedule and Cancellation Policies</a></li><li><a href='#'>How to Schedule a Salesforce Exam</a></li></ul>",
+    scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
   },
 ];
 

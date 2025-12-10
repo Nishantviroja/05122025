@@ -2,7 +2,9 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { certifications, categories } from "@/data/certifications";
+import Image from "next/image";
+import { certifications } from "@/data/certifications";
+import { categories } from "@/data/categories";
 
 // Trailhead-style Trail Icon Component
 function TrailIcon({ color = "#0176D3" }: { color?: string }) {
@@ -170,17 +172,25 @@ export default function DumpsPage() {
                 {filteredCerts.map((dump) => (
                   <Link
                     key={dump.id}
-                    href={`/dumps/${dump.id}`}
+                    href={`/${dump.id}`}
                     className="flex items-start gap-4 p-4 border border-[#E5E5E5] rounded-lg hover:shadow-md transition-shadow bg-white group"
                   >
-                    {/* Trail Icon */}
+                    {/* Certification Image */}
                     <div className="flex-shrink-0">
-                      <TrailIcon color={
-                        dump.color === "blue" ? "#0176D3" :
-                        dump.color === "green" ? "#2E844A" :
-                        dump.color === "orange" ? "#FE9339" :
-                        "#9050E9"
-                      } />
+                      {dump.certificationIMG ? (
+                        <div className="w-12 h-12 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100">
+                          <Image
+                            src={dump.certificationIMG}
+                            alt={dump.title}
+                            width={48}
+                            height={48}
+                            className="w-full h-full object-contain"
+                            unoptimized
+                          />
+                        </div>
+                      ) : (
+                        <TrailIcon color="#0176D3" />
+                      )}
                     </div>
 
                     {/* Content */}
