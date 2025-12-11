@@ -16,13 +16,85 @@ const poppins = Poppins({
   display: "swap",
 });
 
+import { SEO_CONFIG } from '@/data/seo';
+
+const baseUrl = SEO_CONFIG.siteUrl;
+const siteName = SEO_CONFIG.siteName;
+const defaultTitle = SEO_CONFIG.defaultTitle;
+const defaultDescription = SEO_CONFIG.defaultDescription;
+const defaultImage = SEO_CONFIG.defaultImage;
+
 export const metadata: Metadata = {
-  title: "Salesforce Dumps | Premium Certification Exam Preparation",
-  description: "High-quality Salesforce certification exam dumps with real questions and accurate answers. Prepare for Admin, Developer, Architect, and Consultant certifications.",
-  keywords: "Salesforce dumps, Salesforce certification, exam preparation, Admin certification, Developer certification",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: defaultTitle,
+    template: '%s',
+  },
+  description: defaultDescription,
+  keywords: [
+    "Salesforce dumps",
+    "Salesforce certification",
+    "exam preparation",
+    "Admin certification",
+    "Developer certification",
+    "Salesforce exam questions",
+    "certification dumps",
+    "Salesforce study materials",
+    "Salesforce practice tests"
+  ],
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: baseUrl,
+    siteName: siteName,
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [
+      {
+        url: defaultImage,
+        width: 1200,
+        height: 630,
+        alt: 'Salesforce Dumps - Premium Certification Exam Preparation',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [defaultImage],
+    creator: SEO_CONFIG.twitterHandle,
+  },
+  alternates: {
+    canonical: baseUrl,
+  },
   icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg",
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/manifest.json',
+  verification: {
+    google: SEO_CONFIG.googleVerification,
   },
 };
 
@@ -33,6 +105,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
+      </head>
       <body className={`${poppins.variable} antialiased bg-white`}>
         <GoogleAnalytics GA_MEASUREMENT_ID={integrations.GA_MEASUREMENT_ID} />
         <MicrosoftClarity CLARITY_PROJECT_ID={integrations.CLARITY_PROJECT_ID} />

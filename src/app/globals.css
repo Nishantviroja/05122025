@@ -147,6 +147,19 @@ footer h3 {
   animation: fade-in-up 0.5s ease-out forwards;
 }
 
+/* Gradient Animation for Badge */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* Card Styles */
 .card-hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;

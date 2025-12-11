@@ -17,10 +17,62 @@ interface DumpDetailPageProps {
   params: Promise<{ id: string }>;
 }
 
+import type { Metadata } from "next";
+import { SEO_CONFIG } from '@/data/seo';
+
+const baseUrl = SEO_CONFIG.siteUrl;
+
 export async function generateStaticParams() {
   return certifications.map((cert) => ({
     id: cert.id,
   }));
+}
+
+export async function generateMetadata({ params }: DumpDetailPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const certification = certifications.find((c) => c.id === id);
+
+  if (!certification) {
+    return {
+      title: 'Certification Not Found',
+    };
+  }
+
+  const title = `${certification.title} Exam Dump - ${certification.questionCount}+ Questions`;
+  const description = `${certification.description} Get ${certification.questionCount}+ real exam questions with verified answers. Pass your ${certification.title} certification on the first attempt.`;
+  const url = `${baseUrl}/${id}`;
+
+  return {
+    title,
+    description,
+    keywords: [
+      `${certification.title} dump`,
+      `${certification.title} exam questions`,
+      `${certification.title} certification`,
+      `Salesforce ${certification.category} dump`,
+      `${certification.title} practice test`,
+    ],
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: 'website',
+      images: certification.certificationIMG ? [certification.certificationIMG] : [SEO_CONFIG.defaultImage],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: certification.certificationIMG ? [certification.certificationIMG] : [SEO_CONFIG.defaultImage],
+    },
+    alternates: {
+      canonical: url,
+    },
+  };
 }
 
 export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
@@ -54,8 +106,60 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
     { name: "Workflow/Process Automation", percentage: 16 },
   ];
 
+  // Schema markup for product
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": `${certification.title} Exam Dump`,
+    "description": certification.description,
+      "image": certification.certificationIMG || SEO_CONFIG.defaultImage,
+    "brand": {
+      "@type": "Brand",
+      "name": SEO_CONFIG.siteName
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `${baseUrl}/${id}`,
+      "priceCurrency": "USD",
+      "price": certification.price.toString(),
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": SEO_CONFIG.siteName
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": certification.rating.toString(),
+      "reviewCount": "100"
+    }
+  };
+
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": `${certification.title} Certification Exam Preparation`,
+    "description": certification.description,
+    "provider": {
+      "@type": "Organization",
+      "name": SEO_CONFIG.siteName,
+      "url": SEO_CONFIG.siteUrl
+    },
+    "courseCode": certification.id,
+    "educationalLevel": certification.difficulty
+  };
+
   return (
-    <div className="min-h-screen bg-sf-gray-100">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
+      />
+      <div className="min-h-screen bg-sf-gray-100">
       {/* Header */}
       <section className="relative bg-[#FFFFFF] py-8 md:py-12 min-h-[280px] md:min-h-[330px]">
         {/* Gradient Overlay - Back Layer */}
@@ -361,6 +465,7 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
         </section>
       )}
     </div>
+    </>
   );
 }
 

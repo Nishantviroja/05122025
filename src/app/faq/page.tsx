@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ChevronDownIcon, ArrowRightIcon } from "@/components/icons";
+import { SEO_CONFIG } from '@/data/seo';
 
 const faqCategories = [
   {
@@ -102,17 +103,50 @@ export default function FAQPage() {
     );
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqCategories.flatMap(category => 
+      category.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    )
+  };
+
   return (
-    <div className="min-h-screen">
-      {/* Header */}
-      <section className="gradient-hero py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Find answers to common questions about our Salesforce certification dumps
-          </p>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <div className="min-h-screen">
+      {/* Hero */}
+      <section className="relative pt-12 pb-48 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEhIkvJ6PMfQw6og0NmzqWV1cLUEjqPsdv0vEW_jpI1lsYqrzSfT9kUtQfncb680FIc6ISDOoIttWsXdR7kktBqC7SPWBpZjQ2fldnCz2WB0OQHwbHHryzSXXcz3kEWuiQS3_hQjG5Duyw78HSvHRHXVdr2304fqmqy8JrdaBmCH8TdLM81wvOBH978BblX0=s16000"
+            alt="FAQ Background"
+            className="w-full h-full object-cover object-bottom"
+            style={{ display: 'block' }}
+          />
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Frequently Asked Questions
+            </h1>
+            <p className="text-white/90">
+              Find answers to common questions about our Salesforce certification dumps
+            </p>
+          </div>
         </div>
       </section>
 
@@ -132,7 +166,7 @@ export default function FAQPage() {
                   return (
                     <div
                       key={itemId}
-                      className="bg-[#F3F3F3] rounded-xl overflow-hidden"
+                      className="bg-[#c6e9ff]/20 border border-[#c6e9ff]/40 rounded-xl overflow-hidden"
                     >
                       <button
                         onClick={() => toggleItem(itemId)}
@@ -162,9 +196,36 @@ export default function FAQPage() {
       </section>
 
       {/* Still Have Questions */}
-      <section className="py-16 bg-[#F3F3F3]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-[#032D60] mb-4">
+      <section className="relative py-20 bg-white min-h-[70vh]">
+        {/* Gradient Overlay - Back Layer */}
+        <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 1, background: 'linear-gradient(180deg, #fff 29.72%, #c6e9ff 100%)' }}></div>
+
+        {/* Background Images - Middle Layer */}
+        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden flex items-end" style={{ zIndex: 2 }}>
+          {/* Left Background Image */}
+          <div className="relative w-1/2 flex items-end justify-start">
+            <img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEiFnsCNGs4yaLiFVQ5hweAk3glhBgPKJVWdEz8j5uIqgIUuhv_MpSSMpS0TwbP730LM2KK0LJB5HBDtRzgy9owiil8chbhUFLoMY-LFNmSpZsZctDozm6j0raBclcrYTDdCw0QLRjISGhtYp6mCNfPVpvw-qTYgNQIT9768HGkfPoG_dQTXL2Sxg6akG0LX=s16000"
+              alt="Left Background"
+              className="max-h-[70vh] w-auto object-contain"
+              style={{ display: 'block', margin: 0, padding: 0, verticalAlign: 'bottom' }}
+            />
+          </div>
+          
+          {/* Right Background Image */}
+          <div className="relative w-1/2 flex items-end justify-end">
+            <img
+              src="https://blogger.googleusercontent.com/img/a/AVvXsEgl6lLCGsii8kyyUQQyyoSN7fxq0r49_87r6JKy23dlgFqsqdNHXlrc4SNenDgJF6fk9OimJ36NvANwxMZU3SgsFL8pMYICG5Iy3WHf5U7xoQSCyXKu5KA60otm_-bM-oxdm3hGgHiSuu19wLTUDZFUMMsR6deqMwM9kRg4g6OH6VAo4bBFNxwk2SxV9h6f=s16000"
+              alt="Right Background"
+              className="max-h-[70vh] w-auto object-contain"
+              style={{ display: 'block', margin: 0, padding: 0, verticalAlign: 'bottom' }}
+            />
+          </div>
+        </div>
+
+        {/* Content - Front Layer */}
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ zIndex: 3 }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#032D60] mb-4">
             Still Have Questions?
           </h2>
           <p className="text-[#444444] mb-8">
@@ -180,5 +241,6 @@ export default function FAQPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

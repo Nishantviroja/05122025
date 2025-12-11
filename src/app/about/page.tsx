@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { 
   ShieldIcon, 
@@ -5,6 +6,33 @@ import {
   UsersIcon, 
   StarIcon
 } from "@/components/icons";
+import { SEO_CONFIG } from '@/data/seo';
+
+const baseUrl = SEO_CONFIG.siteUrl;
+
+export const metadata: Metadata = {
+  title: "About Us - Salesforce Dumps",
+  description: "Learn about Salesforce Dumps - built by certified professionals to help Salesforce professionals achieve their certification goals. Over 10,000 professionals passed with our materials.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "About Us - Salesforce Dumps",
+    description: "Learn about Salesforce Dumps - built by certified professionals to help Salesforce professionals achieve their certification goals.",
+    url: `${baseUrl}/about`,
+    type: 'website',
+    images: [SEO_CONFIG.defaultImage],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "About Us - Salesforce Dumps",
+    description: "Learn about Salesforce Dumps - built by certified professionals to help Salesforce professionals achieve their certification goals.",
+  },
+  alternates: {
+    canonical: `${baseUrl}/about`,
+  },
+};
 
 const values = [
   {
@@ -34,8 +62,28 @@ const milestones = [
 ];
 
 export default function AboutPage() {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": SEO_CONFIG.siteName,
+    "url": SEO_CONFIG.siteUrl,
+    "logo": SEO_CONFIG.defaultImage,
+    "description": SEO_CONFIG.defaultDescription,
+    "foundingDate": "2020",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": "10-50"
+    },
+    "sameAs": []
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <div className="min-h-screen">
       {/* Hero */}
       <section className="relative pt-12 pb-48 overflow-hidden">
         {/* Background Image */}
@@ -190,5 +238,6 @@ export default function AboutPage() {
       </section>
 
     </div>
+    </>
   );
 }

@@ -14,7 +14,7 @@ export default function AnnouncementBanner() {
           Latest exam dumps available!
         </span>
         <Link 
-          href="/certifications" 
+          href="/dumps" 
           className=" underline hover:no-underline font-medium"
         >
         Explore Now →
