@@ -11,7 +11,7 @@ export const certifications: CertificationCardProps[] = [
     id: "advanced-field-service-accredited-professional",
     description: "Accredited Advanced Field Service Professionals have demonstrated skills and knowledge in designing, configuring, building, and implementing Advanced Field Service.",
     questionCount: 420,
-    lastUpdated: 45627,
+    lastUpdated: "Dec 2024",
     difficulty: "Beginner",
     rating: 4.9,
     price: 29,
