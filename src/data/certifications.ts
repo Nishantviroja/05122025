@@ -3,7 +3,6 @@ import type { CertificationCardProps } from "@/components/ui/CertificationCard";
 export const certifications: CertificationCardProps[] = [
 {
     title: "Advanced Field Service Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEhDXCjZwdUoCEmhiLZDWBdqk-F3SqzODYVjDgRsDN-w3dLoOEd7e3AlXKXegFBS8r8hUdsRH0KeMca16mbF1LoLo6HgPWMGa9BhCtaxdCNpJwM0GB3JUAplesD7SrYs_X2OKmyv6uZjNLx33IfVGqweJxhL4lUpO8Lf0aSb1s7F0cLG-htdhNXJPpv5rCAT=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgqVRgEVVYyCM_PsxUyUxwjaNcVAe3u5RCDZK5hdgUW25dtVYU3Hnz0CF9U09_AEOeB7PuEk42VoDRLgKugLD0fw-wfK19DZFW8rwxRDLSVuypOUQM6LjFEZogYei6EOqrRAOdki2OO-5XuOxh26vH0gZsH15__SxGYO80zwc_6Hl2npASzJCiN9EeS5c14=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-advanced-field-service-ap---AP-209",
     category: "Consultant",
@@ -25,7 +24,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "B2B Commerce for Administrators Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEjVyUlo85L0sRHPMx1ftdi6rjbQ9lUoQF9fuKB3BKVyP6Qw5hoZGYGKQxYk9wqPjNccMY7MmJvK8xAZHkkJ2whgdE-GdJ4RWPOOTe8Y8kmVqpDaKfsSxcQUw4nfVwQX0IAffi3f9k5YOz5HFDZzIz08kIBTMWPT7M7XlwsKR1iDFZgoWOyEy9lHlMEWeNbF=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2b-commerce-admin-ap---AP-201",
     category: "Administrator",
@@ -46,7 +44,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "B2B Commerce for Developers Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEibi7pVVx_g7NJc8EL6O97wrGZU1TTYe5HaNv2dLY6UBeNvwobiICfKMhWMSZmvK-RzduKB_NzDBtrRO7IasCPPQX6mTOi8k6d74fMX6gtNad-rVNmE4OrZT29lhYW8-14iVZfyQmVNFG9hxpBhgdumFoWNNI4OSK7mqz9qaYc8cNbaWLY3biZPS9ErDCvF=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgNzC22k89B_4ByKn1UOnVLXHydSsPVcnJh_ff02VC_zw8MwPnxHq6vQBNZ4loDeEKdviaAhbHp8n-bt49jnKf2X4PYvk5NYNVcbEQuZ1QMd4Ft4lHHwhy8OBTzDUtYd3JWs2B9fx53rRQX8EG1EOyvU8WdYZleNZLCqtf-AMlsygm37KTFw6K_i2KrBmUM=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2b-commerce-developer-ap---AP-202",
     category: "Developer",
@@ -67,7 +64,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Communications Cloud Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEjI_3Em-Djlb2b2YnhcQl4gif7YHeVKcTjLEUcl0j-xXhQEiAv3vI12tieAgtsTVlQH4hLqAM065udNtUu-BDw5hJy-yH_3TVj7mY8RhiAMdcitDI-Mvze-VFi6SX6JLU26-p2gIpVkWSSi79g1-_l8U_p37HRozQU3XPHzLESPtZEXEYLqM_VK3zHl--w0=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-communications-cloud-ap---AP-203",
     category: "Consultant",
@@ -89,7 +85,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Platform Sharing and Visibility Architect",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgPK7mwRj1kJXLmB-A1qkTPc0BKuozRhcGFbN-BkxG_q40n_CkkfvoJENe1S_t_SnDzeoEPe9Z9wGr7pHnwRRVwwMBeT_-a0AVvnsadpYqFa7u7m7z5Xx9RJtj_umCH5oKME4c6BGyTeIauYJkmMg9szfK_b7M0_AnfArfxjaUwYKoWXNdwj0mp9pyjFjXg=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEjVbVwJe7wEix8CpX0lksSVy6krksavj8wGgjeE4oWwap7p7bx9H6psqUCwq_XenQP_k1WQxn6cuXr9aTVU99JuutW6_p8TLWUwbZUU_NY26S1PMhEgEt2bGw7Tm3HJtUCqOpqKkgqFqU0opH4WFw-6BwldiJaOqp7UiiqjrbgAkRyR7297_QwXrMHBtBz8=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-sharing-visibility---Plat-Arch-205",
     category: "Architect",
@@ -110,7 +105,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Consumer Goods Cloud: Trade Promotion Management Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEi56ZqJTlnvI36cAxafvXnl5UVV-PKNuZU-4waCVntu8ghzM5kyZ-f2OCvJVkNDp4N5_iXnjJh5YFr_qzoitr06pLF03w9Hc1BkKTFXOXYxUAWgckl8P--0GdQ5rEgc8XGKzCknynEu8njeCh3GMgv-IE9eElX8HRvkw6WlW9q_7VxO8tkBNb8NdxjTwouu=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-consumer-goods-cloud-trade-promotion-management-ap---AP-205",
     category: "Consultant",
@@ -131,7 +125,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Consumer Goods Cloud Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEglUuaDdkRH9ChcnYduzRKbVCdoq5xjN73AdaPbMf1fMkEfidEfaiqegzSd2YcAP0kR86Sicg21sIld9jMi61RpPOOiCVIHW-La0vetlgXdXR3Z3g0-k8XxLEl1ICm99z-A8NdWBs5nkeNmncCgCYgV2H6Ei47YTIumtGRYD12B2EdMTjxCoCO1Z3ZQxXel=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-consumer-goods-cloud-ap---AP-204",
     category: "Consultant",
@@ -152,7 +145,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Contact Center Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhZbJOioSnHgNqcY9e07ZoNg3jBfutT_UxvMrevSoqxQZU-hnTuVy6JI3dHvBa0R6MH10kgPJ0QjzEPsOdlxA3xfd-nO3tqCzFCNFzS5v7NcbsWAC-bQX4MTzHZSjKwKJiLyEksjJSpPAZ9YC9vdZbQjR2LViud4OOwKluGmHB3fNbjnRAKVG6D36V-XAUu=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-contact-center-ap---AP-226",
     category: "Customer Service Professional",
@@ -173,7 +165,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Energy and Utilities Cloud Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEiMvbmCdbciJjIFhvTksVY0hySFgVLTenh-zYZ-Ig2iKVEQfJJ_JjewRCufqf1j61RuYi3mXmCv4yCEBFrPh1la5b6jy8mTrQL-J9U7NsvXJrly8RzHVt5WyGCXCmHKS2zABO_IxQoLV9d5rx5u2X80Iv7IICAHe43J--3NiTgPW6e-NPPjs-ifbOheH9wy=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-energy-and-utilities-cloud-ap---AP-207",
     category: "Consultant",
@@ -194,7 +185,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Financial Services Cloud Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEjSjrUodY__dIamQ5VNoNfnYHJLicKsNnsV4BrX5uVKNYSjJkNU_2cAj8r5WAgvPAbCjgfTX0VvCs9XHIbDb2ofZj_4JwZCx22cYb5ed-P_AxLhPGQ_sjNHvs6z1CbhvPrcbRqEO3JPdpfIdFrvLaautaTqrkSZRl7mUQG5Z-oOkZ5XBWXOrnG_OBztsgqz=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-financial-services-cloud-ap---AP-208",
     category: "Consultant",
@@ -216,7 +206,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Health Cloud Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEglMX6rL4UO_-yOLR42TO9dHCTH8_tsUEm9VxVviQwFdFtms8ormp8znWODWS09L_EWel9rv_fOttG8pxkwRJDcxt1UcxSoP3qUZo_vhV7f7cmsWyR5-Ql3pZ2Sss1AgT21mI9SHWWmTF7CiGXzYA7-oBq7r9gcGzT3RN-toH_5BCa-bapsQfthmituEA1K=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-health-cloud-ap---AP-211",
     category: "Consultant",
@@ -237,7 +226,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Heroku Developer Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEibi7pVVx_g7NJc8EL6O97wrGZU1TTYe5HaNv2dLY6UBeNvwobiICfKMhWMSZmvK-RzduKB_NzDBtrRO7IasCPPQX6mTOi8k6d74fMX6gtNad-rVNmE4OrZT29lhYW8-14iVZfyQmVNFG9hxpBhgdumFoWNNI4OSK7mqz9qaYc8cNbaWLY3biZPS9ErDCvF=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEg5OW5l9afGKqhxHo3W1vXUxXj2Ow-cOUPeZNgyODumFxtomSR2Pulyn-UHkndIg0FGqIqxzd-EGCz5O0qDJ2FfHVK6X-Z7QgVyuhdi4WTX5g0RDzArPTH6spkBTNV9vY002hhXKKzX1d2B17vE4UiEHO7eh_HxHHCooLLaoz0AYuh4_JuINgEF3G5fxxiy=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-heroku-developer-ap---AP-225",
     category: "Developer",
@@ -258,7 +246,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Loyalty Management Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEiWgP9a9U06AB9-sZgwxbyyOoTbnPADMPZ-xpHW0StD8VDcy1UhQ7q86EOpITWVcnp6k_hG1b0Zz5FMBWPth0c8nfbBR-Ce_tmxk1ZapA4JSDt2RfZSVHXi-39ZmfRnOjnMTcQVScHwbJN8H2-aSlVQ1EdljXhwtXW6fqoHywsE5SY7EuM0zIkO5b4zZiXs=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-loyalty-management-ap---AP-212",
     category: "Consultant",
@@ -279,7 +266,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Manufacturing Cloud Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEiZa5nKPmIkIVX6fWQbBSZHINbh8Q15mISMvFfYl7ejJioEoQRpZJuCRpf6O_e_GFutzSWte1GImBRbDM1b8UriREUkFBthzQi5Qe9sm_VthiETvvARfTkJ5F6LWqdDiPy52M1696VwkWfxPlmWKG_HGa9TAE1S4q-g7AJoiqJaBYqM1m--1RRJ_VtIyK9m=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-manufacturing-cloud-ap---AP-213",
     category: "Consultant",
@@ -300,7 +286,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Marketing Cloud Advanced Cross Channel Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEi_yoKxTWiJ0sPgLynKgqoVY8wgs9BeXtO4JOXzyYmxRcJF0ldKRHm34W18jtwZDAhx7Im3dme6XqJ7YDsMylYBhnuLaeFfjPACrtyGcybDMDo_aJoi-zVBd_VmbMDBC-XJ3L2tp9QNjfT9smSZjyDXkCnMNtaJpkKnnU_m2w95lMC2ZF6SC5MRLUGqRz8w=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mc-advanced-cross-channel-ap---AP-214",
     category: "Consultant",
@@ -321,7 +306,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified B2C Solution Architect",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgPK7mwRj1kJXLmB-A1qkTPc0BKuozRhcGFbN-BkxG_q40n_CkkfvoJENe1S_t_SnDzeoEPe9Z9wGr7pHnwRRVwwMBeT_-a0AVvnsadpYqFa7u7m7z5Xx9RJtj_umCH5oKME4c6BGyTeIauYJkmMg9szfK_b7M0_AnfArfxjaUwYKoWXNdwj0mp9pyjFjXg=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEibqtgKQreNQDGHSLzE9p_YUCEBfRxcrSGrgxG4b8t7QmaHWr2opFLLfJAcEJTIA4kkyfjmJusBuYVVqNkExXRRUJ6w50NPoJH6_o22ao_8JNnpyMV46Rlet2LMrsptPwnMsCkeX8hOKejcGETrNBVL2RjFhyE6W2Nwt518prTELHd82x8N_Xavl4tidW30=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2c-solution-architect---Arch-302",
     category: "Architect",
@@ -343,7 +327,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Omnistudio Developer",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEibi7pVVx_g7NJc8EL6O97wrGZU1TTYe5HaNv2dLY6UBeNvwobiICfKMhWMSZmvK-RzduKB_NzDBtrRO7IasCPPQX6mTOi8k6d74fMX6gtNad-rVNmE4OrZT29lhYW8-14iVZfyQmVNFG9hxpBhgdumFoWNNI4OSK7mqz9qaYc8cNbaWLY3biZPS9ErDCvF=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhZ8phIeohFae6tOtpeS5epSELs3DoFhgjCx6Tj9JvHinhpV5lCfZc9DM9wPguyEHJdjZ7xVMXB5NmUbDKP4tTBOyZGk41eJ-LzmuhLR__zk3qjBf4h7c1rbncNrTNVXmuGrVoN8XdOWdmyLq_EotbixBJNoT7XulouJPsnS4CT0Sq0cDDVbqcXpfWX9Gy7=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-omnistudio-developer---Plat-Dev-210",
     category: "Developer",
@@ -365,7 +348,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Platform Administrator",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgRezQ2IujAmpXnXXhqFmRv3cdCSOmxJoFmXo0nANiY5je3ObJZPHSzrt4If9aDSrgwMzIG04oZ-ZBB1rU05IBOTSz-Xfm9GmLbm6Rh51Ws-0mp8X8R5KYHX2Dos6TPJGZaumxot7vQAFZQTSvsBA67y2FBb5StrBNrPbmRDKzk0XqpcRn2KJgyN90W371P=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin---Plat-Admn-201",
     category: "Administrator",
@@ -387,7 +369,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Platform Administrator II",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEjPhu5g6vAVlbRe_cTR4eqq0cp3BjaGfsGAhwg8cztnbwlsZXwVTe8OX2CAgJRLBLDLaM8W1ON0qtpTjrpoc_z6jNdPqkui5WTP1lzD70AV9SNzsxuSML0odibgH3KSHTq4LMJ7H7Q5SCYSc5sYc3BwlMQnn9d_wGqNLikI9bD3FxAxs-FQ0we1ENGVVHRW=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin2---Plat-Admn-301",
     category: "Administrator",
@@ -408,7 +389,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Service Cloud Consultant",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEhDXCjZwdUoCEmhiLZDWBdqk-F3SqzODYVjDgRsDN-w3dLoOEd7e3AlXKXegFBS8r8hUdsRH0KeMca16mbF1LoLo6HgPWMGa9BhCtaxdCNpJwM0GB3JUAplesD7SrYs_X2OKmyv6uZjNLx33IfVGqweJxhL4lUpO8Lf0aSb1s7F0cLG-htdhNXJPpv5rCAT=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhvs_SzDKdGNqYjC9C9lB_hOHx6m6bnXJJVtbBvWwh59sbbhApYbiqBe6bgDsr1jOiiIYP-juvoiAcxJxnBFvJIBcAR8FW9CrNPs2unzAZ7LspGP-yxH0DlTLxIphOnFL9fCdOwRVt8LlAX4U1PjV0nHf542GfeFMcah--EHl3orbL-abTEbCcWx8a5keUN=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-service-consultant---Service-Con-201",
     category: "Consultant",
@@ -429,7 +409,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Tableau Server Administrator",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhyM5Bc29LsveYw4ohPfBYTW36j0IFdX3GHdfpVDOQtfriQ9W7B_JZClYYMa-GWMfeW-xg1Rf4RaKjAilnCIlwGFrJuN54zpYF0w7o8-X90gHYLcIPy9isg-LYWbL6O5skmvIxk34WJUYK0_ksmyJZfFy-_xf7NGB0tYHlyhhEvG8XCAdSs941lJJprcPjd=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-tableau-server-adm---Analytics-Admn-201",
     category: "Administrator",
@@ -450,7 +429,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Marketing Cloud Intelligence Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEibi7pVVx_g7NJc8EL6O97wrGZU1TTYe5HaNv2dLY6UBeNvwobiICfKMhWMSZmvK-RzduKB_NzDBtrRO7IasCPPQX6mTOi8k6d74fMX6gtNad-rVNmE4OrZT29lhYW8-14iVZfyQmVNFG9hxpBhgdumFoWNNI4OSK7mqz9qaYc8cNbaWLY3biZPS9ErDCvF=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEj-5BcCCBmJ-zzGoEr93ljUYCK2L8Zbzz8P7gGWtjpzSlRosKZn7fEh2Ktgr_bphVqZbSduXR_AAAbGV5yq2DywLqYlNYdaOtGzUeC2F_62Hd8lxnwiprXZh8Cw6hzhhCaxial9qTneGBTA0L3MiXeVpuLlHdbU2hlcpJLyTWLCUCvORebCqw6OZVfl4Zm9=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mc-intelligence-ap---AP-215",
     category: "Developer",
@@ -472,7 +450,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Marketing Cloud Personalization Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEhDXCjZwdUoCEmhiLZDWBdqk-F3SqzODYVjDgRsDN-w3dLoOEd7e3AlXKXegFBS8r8hUdsRH0KeMca16mbF1LoLo6HgPWMGa9BhCtaxdCNpJwM0GB3JUAplesD7SrYs_X2OKmyv6uZjNLx33IfVGqweJxhL4lUpO8Lf0aSb1s7F0cLG-htdhNXJPpv5rCAT=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEjGS0vM_X79LOarrpT1njLxbj_euSol7983i4mSSrek57eWWq8KHKu8gO9z6hb3HK9Bx3aEd4cgWnfGgCFM67dXULlaSyc6IqzsYHxUJJCYdZsKVgzvehdc6iw4YUD_w6sIKAlbSEFEucVPy8Zol6v8MFmyyK-kFOd00uN4v-N5yH_x-t3w-g0S3ZnkshZv=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-mc-personalization-ap---AP-216",
     category: "Consultant",
@@ -493,7 +470,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Media Cloud Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEhDXCjZwdUoCEmhiLZDWBdqk-F3SqzODYVjDgRsDN-w3dLoOEd7e3AlXKXegFBS8r8hUdsRH0KeMca16mbF1LoLo6HgPWMGa9BhCtaxdCNpJwM0GB3JUAplesD7SrYs_X2OKmyv6uZjNLx33IfVGqweJxhL4lUpO8Lf0aSb1s7F0cLG-htdhNXJPpv5rCAT=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEivaLEg3ooLS_6UXbgF6IEBTfG_hvv96BQ8wgBfTzv3uLX219GGB-kNnUz_JAgxuVxottWvFTccEFy0K7WHmdMyqrETq6r842LSnaOdAF1bIV02-5fC2HjUJ_ERysiDDx20Prrihl7p4GkHXgX7O-0TrmZrjQub11c4MRH7jqAJgEOyV-wggcwNQDwFtiPB=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-media-cloud-ap---AP-217",
     category: "Consultant",
@@ -514,7 +490,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Net Zero Cloud Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEhDXCjZwdUoCEmhiLZDWBdqk-F3SqzODYVjDgRsDN-w3dLoOEd7e3AlXKXegFBS8r8hUdsRH0KeMca16mbF1LoLo6HgPWMGa9BhCtaxdCNpJwM0GB3JUAplesD7SrYs_X2OKmyv6uZjNLx33IfVGqweJxhL4lUpO8Lf0aSb1s7F0cLG-htdhNXJPpv5rCAT=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEjVjbohem6Gp2IMqMONkWz8I7hcjonNYrDmZn4LUtqtDi4m39TuId7x4RAvHzqzZRhPt_niGSd6sgLzhXa4rq-44mFuAMW7bvxOju79skntJC8IQmt9o91FvHw6Xs6wzLJcL42vnYfEFXuEtdn7fb6O5JwUZ_QfnMaFIj0D8J5H3m_SpAzR52VGWOgqCM5z=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-net-zero-cloud-ap---AP-218",
     category: "Consultant",
@@ -535,7 +510,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Order Management Administrator Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEjhZRR17J1jnVfyxbi5CZPNbuiexm3bdVYnNJ6PPVcBF-cxFsHleA0Cg53HuUxt1uhkFHEhP0jTzXuJEoNgniRyM8nP46Z7vWb4JGZm4XwKfmr5dz4QJZFbY2eYzwXnVlyrvMS9topB2_PA4loa-563w3ZJ0yhe4V_XkvBASsAkZwQfedqxP35MWcn7Xuwe=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-order-mgmt-admin-ap---AP-219",
     category: "Administrator",
@@ -557,7 +531,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Order Management Developer Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEibi7pVVx_g7NJc8EL6O97wrGZU1TTYe5HaNv2dLY6UBeNvwobiICfKMhWMSZmvK-RzduKB_NzDBtrRO7IasCPPQX6mTOi8k6d74fMX6gtNad-rVNmE4OrZT29lhYW8-14iVZfyQmVNFG9hxpBhgdumFoWNNI4OSK7mqz9qaYc8cNbaWLY3biZPS9ErDCvF=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhkiwzFplzyEjxF9tmynbLmH6rJTmx0eP-N65oSCd2YtcJynDk0vOnJGGGRr0rS-C7xccQ_GhEz0Nloq0xhLD_Jiu_CT0yno-VXDZqk6ZyslqZ0kmae7FrrLqMQvtkfJFp7JULPHBTIQHIBKwrDpLpVplWlN_Q3jIEhGIwaZI0hzlu40_COLN9o6rEt2_ix=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-order-mgmt-dev-ap---AP-220",
     category: "Developer",
@@ -578,7 +551,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Process Automation Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEhDXCjZwdUoCEmhiLZDWBdqk-F3SqzODYVjDgRsDN-w3dLoOEd7e3AlXKXegFBS8r8hUdsRH0KeMca16mbF1LoLo6HgPWMGa9BhCtaxdCNpJwM0GB3JUAplesD7SrYs_X2OKmyv6uZjNLx33IfVGqweJxhL4lUpO8Lf0aSb1s7F0cLG-htdhNXJPpv5rCAT=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgKQpsNIBjZdGCmh19MDBZ0V9hkV479kPctrlcemqL1cBaq-lgBxDel6B6ilPukLHDB9g8d6dQaeY93SmjQR-sIOjrTrGruizimf7910SjdmOOgk3ZxzFe_trkJ5RoUu01rKFH-otCFcraUBHCICJgcnKnr9CT2AVjGKBXNelRMbB9ARsIVK0WaM3fwW0xC=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-process-automation-ap---AP-221",
     category: "Consultant",
@@ -599,7 +571,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Public Sector Solutions Accredited Professional",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEhDXCjZwdUoCEmhiLZDWBdqk-F3SqzODYVjDgRsDN-w3dLoOEd7e3AlXKXegFBS8r8hUdsRH0KeMca16mbF1LoLo6HgPWMGa9BhCtaxdCNpJwM0GB3JUAplesD7SrYs_X2OKmyv6uZjNLx33IfVGqweJxhL4lUpO8Lf0aSb1s7F0cLG-htdhNXJPpv5rCAT=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEgtCeLGKRh57xib_-Fv8mQKhs4AVy13mjezZQA9bB_vGezfkaQQI7pf9TBpEQW6U-Yp_4MsI0fXqXLGT9JxZDgeOXMQ01lQ9DnZhhomXDNEOciqa_VdZ3K2-jWer2LpLq29T96G5g4zMhPZB9fq6s0aZwgLOx9drKQbvWi7cotVNJUKxheCmtvNZ1RFgCXq=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-public-sector-solutions-ap---AP-222",
     category: "Consultant",
@@ -620,7 +591,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Agentforce Specialist",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhnJm_lLPKW5Zebd_fwOm0iZ9d3ea9ZmdzVkLyRyLgKdDg8qsFPhNkmoTCOUf90MawXPIUz55TUHjtHWSiUF3NMtlM1nKH_nC-8r7Vw6r9IVcwZqx2pVLvtaPfp8sCXqQObaXW5dux7rlmvc4Lqx7Oy0yx7vLcmUO52Xvl7bYOtLSnYV4tPD9BCY3M1ipXE=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201",
     category: "Administrator",
@@ -641,7 +611,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified B2B Solution Architect",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgPK7mwRj1kJXLmB-A1qkTPc0BKuozRhcGFbN-BkxG_q40n_CkkfvoJENe1S_t_SnDzeoEPe9Z9wGr7pHnwRRVwwMBeT_-a0AVvnsadpYqFa7u7m7z5Xx9RJtj_umCH5oKME4c6BGyTeIauYJkmMg9szfK_b7M0_AnfArfxjaUwYKoWXNdwj0mp9pyjFjXg=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEiWHAYOnQ4-q-Ak2rNMmGyCWjovWtYsFsEhJIeOYh5TOd6gtw_Hagan-WTADBuSfztBI2sb6GKpehA6XBobpbUBY2aBwCcsV6KvR5P-N7nnHyOmd7Ry4ShiPh2EVLnsieTwn82Cgupza28PTj_YhEuyzhTv0E2bc3LqntVMxszhaur5JF_QrUn-Zr-niJkM=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2b-solution-architect---Arch-301",
     category: "Architect",
@@ -663,7 +632,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Platform Administrator Practice Test",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEid24HS0XNmCpZhjZFnjdEDj05bhjXeudyW6dfg1r6zpiTWnrIHdnLCcvRtK66i0WrWWA95b30nXqNleaumWHbk6ZMwYQJi7jiVn1A3ieWu-3VjxB4TdNWC-fAMAr-W7jqGh9NPaH2nBGP3Yk2bDptklBzTOFunG8ayDilu8yIYk8AbJlOe3IJ4_n5_Huiy=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-platform-admin-practice-test---Plat-Admn-201-PT",
     category: "Administrator",
@@ -684,7 +652,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Platform Foundations",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEiq0lThewm7chfgPf41zFX2-DkgQuxAsmOxNm77pS-64rGUsj-eR3_fS6vE5ji6eiINgmrYVNwEUSvBsuD_x1UElmmGUdaMdhmH4ioKzpSnSAw8kECiB1qeHoTCqi2I9ACZTKw12aVcs2rSZwKgp2z5prGGYfhSMY5bMph81AWEcv0Wye5wRCHerQ0Xd0u9=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-platform-foundations---Plat-101",
     category: "Administrator",
@@ -705,7 +672,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Platform Strategy Designer",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEiPZSSd1wPM4ThCL7B1QqJ1rBBZvQ0TNSplOY5GBDHZZ8_TxeBw110NVGCEB4ZDOXOhd7pdoBXdLA2oqOIpGu3N6qehZ5MTy85KH8cyQV2MF9LansHWw9yr-nNCMI0XQNavv6N8Ff1J7ivsVNOWTwqB04-hLBxDDH9-oX8W_zuDYtHmAA6EVvextDzruaPr=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEi0APox13GMvEXjEhNpgdJWSEY-2n8ntf5SvMbQhQnDynq1xvsd3Of42dvLH-_NYJExTZBW-qfi7qT25FlnhnAUah7091hkykcAqiJa_fkCNBIzvRdv4LdlkIb5TKgp5-6h8rkcsENJMwGDRrCVrYHjzSL-wNjqNvUehTcGzWBE3ojrd8lGz6X25tC6bG-L=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-strategy-designer---Plat-UX-102",
     category: "UX Designer",
@@ -726,7 +692,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified B2C Commerce Architect",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgPK7mwRj1kJXLmB-A1qkTPc0BKuozRhcGFbN-BkxG_q40n_CkkfvoJENe1S_t_SnDzeoEPe9Z9wGr7pHnwRRVwwMBeT_-a0AVvnsadpYqFa7u7m7z5Xx9RJtj_umCH5oKME4c6BGyTeIauYJkmMg9szfK_b7M0_AnfArfxjaUwYKoWXNdwj0mp9pyjFjXg=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEg523_Qlm_gftDmZwAe6YCnqHpLc8Sm3qJWCVtZwBNJeGQD8EHO0NHpRD6BfOCMNB_wf9RmRO1U-LL8qClGyV-0XINaop5-MUp1DEASTr4YFN4xa7djBwxO_rVQe5Fri1jVt4QecUkAAyePUuGGVev9PZviD3q0Lrm7JU1F95kVlnL3XgqrLhXO9luHax4a=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2c-comm-architect---Arch-303",
     category: "Architect",
@@ -747,7 +712,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified B2C Commerce Cloud Developer",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEibi7pVVx_g7NJc8EL6O97wrGZU1TTYe5HaNv2dLY6UBeNvwobiICfKMhWMSZmvK-RzduKB_NzDBtrRO7IasCPPQX6mTOi8k6d74fMX6gtNad-rVNmE4OrZT29lhYW8-14iVZfyQmVNFG9hxpBhgdumFoWNNI4OSK7mqz9qaYc8cNbaWLY3biZPS9ErDCvF=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEipYvMDKIzlIfIiStB0tTkQej4lovtwCW29iXcESwOqRQtXDOQ-GdrOf6kL7mzH2zr-MSY2vJiwHImHqznNE_oEAV9HZH6Ua8p0rTWjegiRsmvnhsAu8qlTp9z0AvIas8sSb_5IpjZCxFAOjNOe3qstFGvEi-iZGesQm6v9lr0487oWrVrOswoBfetpNcTS=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-b2c-comm-dev---Comm-Dev-101",
     category: "Developer",
@@ -768,7 +732,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified Business Analyst",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhl4KJ8Po5ZHaRqKYAZzBGYN5N9n77wRYwQkAFomYaRknM_BXwBTD6HE960aBrYdiQiFYLYo9bmWIYxb-c9t2-w1vGgIG2f_N-zC9m-Mv-b5KWQ2hlluxg_-jzOP8xBYQSC4VUyiWNfImxgcppMEC0PCuVdm1g5gzHFZdIeO46WZmVbQc0H059aRw0D9BjP=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-business-analyst---BA-201",
     category: "Business Analyst",
@@ -790,7 +753,6 @@ export const certifications: CertificationCardProps[] = [
 ,
 {
     title: "Salesforce Certified CPQ Administrator",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEgiSwjrrGCwdNbP8Zuv0J-4xWgMwOTyddU3-lvnYHSZVI6jAFjQ4FaCFHpY5BElsvh1bPjjFSIiCHzOLTW5NqLrZpjthjfCWNih5Ssq5oNaM4v38mpClZ72hqItpbHlO-dxkvxtIlmiBtqFA4R-I1TbHfl42jdChbTaTlq0oyNckYqX_0BrANevkc_pvgMX=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhTaOiUHMR7XEarcUnUSbM5yJ7AWRV1KcQcgfcmVKeY57GTz2yWdxL3tXWizRsvIaXXCRcWfOqY_b_SkQ0tgChHQddxbUPdCX5xjYYvcjMu7eydLmw6XM8wcFLwj-DqGCRVKNqhtTxKs73Fb7igYpL8LNGCqz2-1kQhR9tSoA8WCO61rvqiorsOCGW_z8KW=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-data-cloud---Data-Con-101",
     category: "Administrator",
@@ -807,10 +769,10 @@ export const certifications: CertificationCardProps[] = [
     language: "English",
     examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and up to five non-scored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 65%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
     resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
-},
-    {
+}
+,
+{
     title: "Salesforce Certified CRM Analytics and Einstein Discovery Consultant",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEiCA888SyJLwjBNOtRzp7YakX0rUsfFqupD2jWuE8cmgapTo2UaC9eHrDnXhAAWlTZtk1KzcB7CSbd-F28uKQ8Zr5Gpd5U4_F4gtLSDE0Ez_HaouQd1Eg1rTASgb9a0VdjXBRLSvaGaLKncooTPSGYozApfUznaplCB7rcaLe_OKg8rdHq83ug6wKNXzBjL=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-crm-analytics---Analytics-Con-201",
     category: "Consultant",
@@ -827,10 +789,10 @@ export const certifications: CertificationCardProps[] = [
     language: "English",
     examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice questions and up to five unscored questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 65%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
     resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
-},
+}
+,
 {
     title: "Salesforce Certified Data Cloud Consultant",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEi1Rdil6dy494yHGyKZxHIsOGNo9P2iLH3_P0HnXc0LoLCgyVEw43y767dbsecwHqplmVBRuI59p9PNcgOYGuwBeJ3tsLX_oNMQeLJruHvHNrenJU7YiEhm4SN2OBjgkXH7IN8sdTDbb7KY_q37xVnqLTXc0Zc56bd7hCQ6TtmPbHz-_UtPnjV1YArpLuod=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-data-cloud---Data-Con-101",
     category: "Consultant",
@@ -847,10 +809,10 @@ export const certifications: CertificationCardProps[] = [
     language: "English, Japanese",
     examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions, and up to five non-scored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 62%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
     resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
-},
+}
+,
 {
     title: "Salesforce Certified Education Cloud Consultant",
-    IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEhYlgisRbPH4Hs_jXmusRZ7BMNPFLo9mOWFQOZg88mELYX-1CTFMD0WnWFjq24sFWrNYF91jr9UD6GU_O9HixOer8LbP5bKFtmjK6KN-fb0nyc2DZq9eAkx7HvLc-N0ey_6wOICoR5cY8QxBv5H53U_BToIMtA5zzhnJEcizGCBBBn_W6UnWkJSATSx4Xgm=s16000",
     scheduleExamUrl: "https://trailheadacademy.salesforce.com/certificate/exam-education-cld---ED-Con-101",
     category: "Consultant",
