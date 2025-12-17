@@ -14,6 +14,7 @@ import {
 import { certifications } from "@/data/certifications";
 import BuyButton from "@/components/ui/BuyButton";
 import CertificationCard from "@/components/ui/CertificationCard";
+import { generateProductSchema, generateBreadcrumbSchema, getCertificationBreadcrumb } from '@/components/schema';
 
 interface DumpDetailPageProps {
   params: Promise<{ id: string }>;
@@ -112,47 +113,41 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
     { name: "Workflow/Process Automation", percentage: 16 },
   ];
 
-  // Schema markup for product
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": `${certification.title} Exam Dump`,
-    "description": certification.description,
-      "image": certification.certificationIMG || SEO_CONFIG.defaultImage,
-    "brand": {
-      "@type": "Brand",
-      "name": SEO_CONFIG.siteName
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": `${baseUrl}/${id}`,
-      "priceCurrency": "USD",
-      "price": certification.price.toString(),
-      "availability": "https://schema.org/InStock",
-      "seller": {
-        "@type": "Organization",
-        "name": SEO_CONFIG.siteName
-      }
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": certification.rating.toString(),
-      "reviewCount": "100"
-    }
-  };
+  // Schema markup for product and breadcrumbs
+  const productSchema = generateProductSchema({
+    id: certification.id,
+    title: `${certification.title} Exam Dump`,
+    description: certification.description || certification.aboutCertification || '',
+    price: `$${certification.price}`,
+    category: certification.category,
+    image: certification.certificationIMG,
+    rating: certification.rating,
+    reviewCount: 150,
+    questionCount: certification.questionCount
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    getCertificationBreadcrumb(certification.title, certification.id)
+  );
 
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
     "name": `${certification.title} Certification Exam Preparation`,
-    "description": certification.description,
+    "description": certification.description || certification.aboutCertification || '',
     "provider": {
       "@type": "Organization",
       "name": SEO_CONFIG.siteName,
       "url": SEO_CONFIG.siteUrl
     },
     "courseCode": certification.id,
-    "educationalLevel": certification.difficulty
+    "educationalLevel": certification.difficulty,
+    "offers": {
+      "@type": "Offer",
+      "category": "Paid",
+      "priceCurrency": "USD",
+      "price": certification.price.toString()
+    }
   };
 
   return (
@@ -160,6 +155,10 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <script
         type="application/ld+json"

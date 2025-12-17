@@ -6,8 +6,10 @@ import {
   UsersIcon, 
   StarIcon
 } from "@/components/icons";
+import { SEO_CONFIG } from '@/data/seo';
+import { generateBreadcrumbSchema, getAboutBreadcrumb } from '@/components/schema';
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://salesforcedumps.com';
+const baseUrl = SEO_CONFIG.siteUrl;
 
 export const metadata: Metadata = {
   title: "About Us - Salesforce Dumps",
@@ -76,11 +78,17 @@ export default function AboutPage() {
     "sameAs": []
   };
 
+  const breadcrumbSchema = generateBreadcrumbSchema(getAboutBreadcrumb());
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="min-h-screen">
       {/* Hero */}

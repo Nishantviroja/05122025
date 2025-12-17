@@ -35,36 +35,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/faq`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
-            priority: 0.7,
+            priority: 0.5,
         },
-        // {
-        //     url: `${baseUrl}/privacy`,
-        //     lastModified: new Date(),
-        //     changeFrequency: 'yearly',
-        //     priority: 0.3,
-        // },
-        // {
-        //     url: `${baseUrl}/terms`,
-        //     lastModified: new Date(),
-        //     changeFrequency: 'yearly',
-        //     priority: 0.3,
-        // },
-        // {
-        //     url: `${baseUrl}/refund`,
-        //     lastModified: new Date(),
-        //     changeFrequency: 'yearly',
-        //     priority: 0.3,
-        // },
+        {
+            url: `${baseUrl}/privacy`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.1,
+        },
+        {
+            url: `${baseUrl}/terms`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.1,
+        },
+        {
+            url: `${baseUrl}/refund`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.1,
+        },
     ];
 
-    // Dynamic certification pages - Commented out as per request
-    // const certificationPages: MetadataRoute.Sitemap = certifications.map((cert) => ({
-    //     url: `${baseUrl}/${cert.id}`,
-    //     lastModified: new Date(),
-    //     changeFrequency: 'weekly' as const,
-    //     priority: 0.8,
-    // }));
+    // Dynamic certification pages
+    const certificationPages: MetadataRoute.Sitemap = certifications.map((cert) => ({
+        url: `${baseUrl}/${cert.id}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: cert.badge === "Best Seller" ? 0.9 : 0.7,
+    }));
 
-    return [...staticPages];
+    return [...staticPages, ...certificationPages];
 }
 

@@ -6,9 +6,13 @@ import Image from "next/image";
 import { certifications } from "@/data/certifications";
 import { categories } from "@/data/categories";
 import CertificationCard from "@/components/ui/CertificationCard";
+import ReviewModal from "@/components/ui/ReviewModal";
 import { SEO_CONFIG } from '@/data/seo';
+import { generateWebsiteSchema, generateOrganizationSchema, generateBreadcrumbSchema, getHomeBreadcrumb, generateFAQSchema } from '@/components/schema';
 
 export default function HomePage() {
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
+
   // Separate Best Sellers and other certifications, then combine (Best Sellers first)
   const bestSellers = certifications.filter(cert => cert.badge === "Best Seller");
   const otherCerts = certifications.filter(cert => cert.badge !== "Best Seller");
@@ -26,41 +30,55 @@ export default function HomePage() {
   };
 
   // Schema markup for homepage
-  const schemaMarkup = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": SEO_CONFIG.siteName,
-    "url": SEO_CONFIG.siteUrl,
-    "description": SEO_CONFIG.defaultDescription,
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": `${SEO_CONFIG.siteUrl}/dumps?search={search_term_string}`
-      },
-      "query-input": "required name=search_term_string"
+  const websiteSchema = generateWebsiteSchema();
+  const organizationSchema = generateOrganizationSchema();
+  const breadcrumbSchema = generateBreadcrumbSchema(getHomeBreadcrumb());
+  
+  // FAQ Schema
+  const faqSchema = generateFAQSchema([
+    {
+      question: "What are Salesforce certification dumps?",
+      answer: "Salesforce certification dumps are comprehensive collections of real exam questions and verified answers that help you prepare for Salesforce certification exams. Our dumps include detailed explanations and are regularly updated to match the latest exam versions."
+    },
+    {
+      question: "Are these exam dumps up to date?",
+      answer: "Yes, all our exam dumps are regularly updated to reflect the latest Salesforce certification exam versions. We monitor exam changes and update our materials accordingly to ensure you're studying the most current content."
+    },
+    {
+      question: "How quickly will I receive access after purchase?",
+      answer: "You'll receive instant access to your exam dumps immediately after purchase. The materials are delivered digitally, so you can start studying right away with no waiting time."
+    },
+    {
+      question: "Do you offer a money-back guarantee?",
+      answer: "Yes, we offer a 30-day money-back guarantee. If you're not satisfied with the exam dumps for any reason, contact us within 30 days of purchase for a full refund, no questions asked."
+    },
+    {
+      question: "Can I use these dumps on multiple devices?",
+      answer: "Yes, you have lifetime access to your purchased exam dumps and can access them on any device including computers, tablets, and smartphones. There are no device restrictions."
+    },
+    {
+      question: "What's included in the exam dumps?",
+      answer: "Each exam dump includes 100+ real exam questions with verified answers, detailed explanations, the latest exam version updates, lifetime access, and a money-back guarantee. You also get 20% discount on your second purchase."
     }
-  };
-
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": SEO_CONFIG.siteName,
-    "url": SEO_CONFIG.siteUrl,
-    "logo": SEO_CONFIG.defaultImage,
-    "description": SEO_CONFIG.defaultDescription,
-    "sameAs": []
-  };
+  ]);
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
@@ -234,6 +252,282 @@ export default function HomePage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#032D60] mb-4">
+                What Our Students Say
+              </h2>
+              <p className="text-[#444444] max-w-2xl mx-auto">
+                Join thousands of professionals who have successfully passed their Salesforce certifications with our exam dumps
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Testimonial 1 */}
+              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-[#444444] mb-4 italic">
+                  "These dumps were exactly what I needed to pass my Admin certification. The questions were very similar to the actual exam, and the explanations helped me understand the concepts deeply."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-[#0176D3] rounded-full flex items-center justify-center text-white font-bold">
+                    SM
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-[#032D60]">Sarah Mitchell</p>
+                    <p className="text-sm text-[#5C5C5C]">Salesforce Administrator</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 2 */}
+              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-[#444444] mb-4 italic">
+                  "I passed my Platform Developer I exam on the first try thanks to these comprehensive dumps. Great value for money and instant access made my preparation so much easier."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-[#0176D3] rounded-full flex items-center justify-center text-white font-bold">
+                    JC
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-[#032D60]">James Chen</p>
+                    <p className="text-sm text-[#5C5C5C]">Platform Developer</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 3 */}
+              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-[#444444] mb-4 italic">
+                  "Outstanding quality! The verified answers with detailed explanations helped me not just pass the exam, but truly understand Salesforce. Highly recommend to anyone preparing for certification."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-[#0176D3] rounded-full flex items-center justify-center text-white font-bold">
+                    EP
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-[#032D60]">Emily Parker</p>
+                    <p className="text-sm text-[#5C5C5C]">Sales Cloud Consultant</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 4 */}
+              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-[#444444] mb-4 italic">
+                  "Incredible resource for Service Cloud certification! The practice questions are spot-on and helped me identify my weak areas. Passed with 89% score. Worth every penny!"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-[#0176D3] rounded-full flex items-center justify-center text-white font-bold">
+                    MR
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-[#032D60]">Michael Rodriguez</p>
+                    <p className="text-sm text-[#5C5C5C]">Service Cloud Consultant</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial 5 */}
+              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-[#444444] mb-4 italic">
+                  "Best investment for my Salesforce career! The dumps are well-organized, frequently updated, and the explanations are clear. Successfully cleared my Marketing Cloud exam thanks to this."
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-[#0176D3] rounded-full flex items-center justify-center text-white font-bold">
+                    LW
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-[#032D60]">Lisa Wang</p>
+                    <p className="text-sm text-[#5C5C5C]">Marketing Cloud Specialist</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Add Review Card */}
+              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-[#0176D3] rounded-full flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                    </svg>
+                  </div>
+                </div>
+                
+                <p className="text-[#032D60] font-semibold text-lg mb-2 text-center">Share Your Experience</p>
+                <p className="text-[#444444] text-sm mb-4 text-center">
+                  Join <strong>106+</strong> satisfied customers who have shared their success stories with us.
+                </p>
+                
+                <div className="flex items-center justify-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="text-center text-sm text-[#032D60] font-medium mb-1">4.9 out of 5</p>
+                <p className="text-center text-xs text-[#5C5C5C] mb-6">Based on 106+ reviews</p>
+                
+                <button
+                  onClick={() => setIsReviewModalOpen(true)}
+                  className="w-full bg-[#0176D3] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#014486] transition-colors"
+                >
+                  Add Your Review
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Review Modal */}
+        <ReviewModal 
+          isOpen={isReviewModalOpen} 
+          onClose={() => setIsReviewModalOpen(false)} 
+        />
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-gradient-to-b from-white to-blue-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#032D60] mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-[#444444]">
+                Everything you need to know about our Salesforce exam dumps
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {/* FAQ 1 */}
+              <details className="group bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
+                  <span className="font-semibold text-[#032D60] pr-4">What are Salesforce certification dumps?</span>
+                  <svg className="w-5 h-5 text-[#0176D3] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-[#444444]">
+                  Salesforce certification dumps are comprehensive collections of real exam questions and verified answers that help you prepare for Salesforce certification exams. Our dumps include detailed explanations and are regularly updated to match the latest exam versions.
+                </div>
+              </details>
+
+              {/* FAQ 2 */}
+              <details className="group bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
+                  <span className="font-semibold text-[#032D60] pr-4">Are these exam dumps up to date?</span>
+                  <svg className="w-5 h-5 text-[#0176D3] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-[#444444]">
+                  Yes, all our exam dumps are regularly updated to reflect the latest Salesforce certification exam versions. We monitor exam changes and update our materials accordingly to ensure you're studying the most current content.
+                </div>
+              </details>
+
+              {/* FAQ 3 */}
+              <details className="group bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
+                  <span className="font-semibold text-[#032D60] pr-4">How quickly will I receive access after purchase?</span>
+                  <svg className="w-5 h-5 text-[#0176D3] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-[#444444]">
+                  You'll receive instant access to your exam dumps immediately after purchase. The materials are delivered digitally, so you can start studying right away with no waiting time.
+                </div>
+              </details>
+
+              {/* FAQ 4 */}
+              <details className="group bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
+                  <span className="font-semibold text-[#032D60] pr-4">Do you offer a money-back guarantee?</span>
+                  <svg className="w-5 h-5 text-[#0176D3] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-[#444444]">
+                  Yes, we offer a 30-day money-back guarantee. If you're not satisfied with the exam dumps for any reason, contact us within 30 days of purchase for a full refund, no questions asked.
+                </div>
+              </details>
+
+              {/* FAQ 5 */}
+              <details className="group bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
+                  <span className="font-semibold text-[#032D60] pr-4">Can I use these dumps on multiple devices?</span>
+                  <svg className="w-5 h-5 text-[#0176D3] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-[#444444]">
+                  Yes, you have lifetime access to your purchased exam dumps and can access them on any device including computers, tablets, and smartphones. There are no device restrictions.
+                </div>
+              </details>
+
+              {/* FAQ 6 */}
+              <details className="group bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
+                <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors">
+                  <span className="font-semibold text-[#032D60] pr-4">What's included in the exam dumps?</span>
+                  <svg className="w-5 h-5 text-[#0176D3] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-6 text-[#444444]">
+                  Each exam dump includes 100+ real exam questions with verified answers, detailed explanations, the latest exam version updates, lifetime access, and a money-back guarantee. You also get 20% discount on your second purchase.
+                </div>
+              </details>
+            </div>
+
+            <div className="text-center mt-10">
+              <Link
+                href="/faq"
+                className="inline-flex items-center text-[#0176D3] font-semibold hover:underline"
+              >
+                View All FAQs
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
             </div>
           </div>
         </section>

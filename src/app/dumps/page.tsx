@@ -4,10 +4,13 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { certifications } from "@/data/certifications";
-import { categories } from "@/data/categories";
 import CertificationCard from "@/components/ui/CertificationCard";
+import { generateBreadcrumbSchema, getDumpsBreadcrumb, generateItemListSchema, generateCollectionPageSchema } from '@/components/schema';
 
-const difficulties = ["All Levels", "Beginner", "Intermediate", "Advanced", "Expert"];
+const difficulties = ["All Levels", "Beginner", "Intermediate", "Advanced"];
+
+// Get unique categories from certifications
+const uniqueCategories = Array.from(new Set(certifications.map(cert => cert.category))).sort();
 
 export default function DumpsPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -53,10 +56,50 @@ export default function DumpsPage() {
     return result;
   }, [searchQuery, selectedCategory, selectedDifficulty, sortBy]);
 
+  const breadcrumbSchema = generateBreadcrumbSchema(getDumpsBreadcrumb());
+  
+  // Generate ItemList schema for all products
+  const itemListSchema = generateItemListSchema(
+    filteredCerts.map(cert => ({
+      id: cert.id,
+      title: cert.title,
+      price: cert.price,
+      image: cert.certificationIMG,
+      category: cert.category,
+      rating: cert.rating
+    }))
+  );
+  
+  // Generate CollectionPage schema
+  const collectionSchema = generateCollectionPageSchema(
+    filteredCerts.map(cert => ({
+      id: cert.id,
+      title: cert.title,
+      price: cert.price,
+      image: cert.certificationIMG,
+      category: cert.category,
+      rating: cert.rating
+    })),
+    selectedCategory
+  );
+
   return (
-    <div className="bg-white min-h-screen">
-      {/* Section 1: Hero Section with Background Image */}
-      <section className="relative pt-10  overflow-hidden ">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+      <div className="bg-white min-h-screen">
+        {/* Section 1: Hero Section with Background Image */}
+        <section className="relative pt-10  overflow-hidden ">
         
           {/* Content - Centered */}
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -121,8 +164,8 @@ export default function DumpsPage() {
                     onChange={(e) => setSelectedCategory(e.target.value)}
                   >
                     <option value="">All Categories</option>
-                    {categories.map((cat) => (
-                      <option key={cat.id} value={cat.title}>{cat.title}</option>
+                    {uniqueCategories.map((category) => (
+                      <option key={category} value={category}>{category}</option>
                     ))}
                   </select>
                 </div>
@@ -203,6 +246,7 @@ export default function DumpsPage() {
             </div>
           </div>
         </section>
-    </div>
+      </div>
+    </>
   );
 }
