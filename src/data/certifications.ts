@@ -19,31 +19,8 @@ export const certifications: CertificationCardProps[] = [
     originalPrice: 49,
     badge: "Best Seller",
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 46 multiple-choice or multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 73%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 46 multiple-choice or multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 73%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -63,31 +40,8 @@ export const certifications: CertificationCardProps[] = [
     price: 29,
     originalPrice: 49,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 75%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 75%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -107,31 +61,8 @@ export const certifications: CertificationCardProps[] = [
     price: 35,
     originalPrice: 55,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 68%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 68%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -152,31 +83,8 @@ export const certifications: CertificationCardProps[] = [
     originalPrice: 59,
     badge: "Best Seller",
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 55 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 55%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 55 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 55%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -196,31 +104,8 @@ export const certifications: CertificationCardProps[] = [
     price: 45,
     originalPrice: 69,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 120 minutes</li>
-  <li><strong>Passing score:</strong> 67%</li>
-  <li><strong>Registration fee:</strong> USD 400, plus applicable taxes as required per local law; JPY 60,000</li>
-  <li><strong>Retake fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 60,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice questions</li> <li><strong>Time allotted to complete the exam:</strong> 120 minutes</li> <li><strong>Passing score:</strong> 67%</li> <li><strong>Registration fee:</strong> USD 400, plus applicable taxes as required per local law; JPY 60,000</li> <li><strong>Retake fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 60,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -240,31 +125,8 @@ export const certifications: CertificationCardProps[] = [
     price: 39,
     originalPrice: 55,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 62 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 66%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 62 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 66%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -284,31 +146,8 @@ export const certifications: CertificationCardProps[] = [
     price: 25,
     originalPrice: 49,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 33 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 60 minutes</li>
-  <li><strong>Passing score:</strong> 63%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 33 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 60 minutes</li> <li><strong>Passing score:</strong> 63%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -328,31 +167,8 @@ export const certifications: CertificationCardProps[] = [
     price: 39,
     originalPrice: 59,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 66%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 66%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -372,31 +188,8 @@ export const certifications: CertificationCardProps[] = [
     price: 35,
     originalPrice: 49,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 60%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 60%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -417,31 +210,8 @@ export const certifications: CertificationCardProps[] = [
     originalPrice: 59,
     badge: "Best Seller",
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 55%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 55%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -461,31 +231,8 @@ export const certifications: CertificationCardProps[] = [
     price: 25,
     originalPrice: 49,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 63%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 63%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -505,31 +252,8 @@ export const certifications: CertificationCardProps[] = [
     price: 35,
     originalPrice: 59,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 68%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 68%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -549,31 +273,8 @@ export const certifications: CertificationCardProps[] = [
     price: 30,
     originalPrice: 49,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 69%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 69%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -593,31 +294,8 @@ export const certifications: CertificationCardProps[] = [
     price: 35,
     originalPrice: 59,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 68%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 68%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -637,31 +315,8 @@ export const certifications: CertificationCardProps[] = [
     price: 29,
     originalPrice: 45,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 40 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 60 minutes</li>
-  <li><strong>Passing score:</strong> 67%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 40 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 60 minutes</li> <li><strong>Passing score:</strong> 67%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -682,31 +337,8 @@ export const certifications: CertificationCardProps[] = [
     originalPrice: 69,
     badge: "Best Seller",
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and four non-scored items</li>
-  <li><strong>Time allotted to complete the exam:</strong> 120 minutes</li>
-  <li><strong>Passing score:</strong> 63%</li>
-  <li><strong>Registration fee:</strong> USD 400 plus applicable taxes as required per local law; JPY 60,000</li>
-  <li><strong>Retake fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 60,000</li>
-  <li><strong>Prerequisite:</strong> Salesforce Certified Platform App Builder, Salesforce Certified Platform Data Architect, Salesforce Certified Platform Integration Architect</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and four non-scored items</li> <li><strong>Time allotted to complete the exam:</strong> 120 minutes</li> <li><strong>Passing score:</strong> 63%</li> <li><strong>Registration fee:</strong> USD 400 plus applicable taxes as required per local law; JPY 60,000</li> <li><strong>Retake fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 60,000</li> <li><strong>Prerequisite:</strong> Salesforce Certified Platform App Builder, Salesforce Certified Platform Data Architect, Salesforce Certified Platform Integration Architect</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -727,31 +359,8 @@ export const certifications: CertificationCardProps[] = [
     originalPrice: 59,
     badge: "Best Seller",
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and up to five unscored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li>
-  <li><strong>Passing score:</strong> 67%</li>
-  <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and up to five unscored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 67%</li> <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -763,11 +372,7 @@ export const certifications: CertificationCardProps[] = [
     certificationPrice: "$200.00, ¥30,000",
     aboutCertification: "Certified Platform Administrators are Salesforce pros who are always looking for ways to help their companies get even more out of the Salesforce Platform through additional features and capabilities.",
     id: "salesforce-certified-platform-administrator",
-    description: "The Salesforce Certified Platform Administrator exam is designed for individuals who have experience with Salesforce and continuously look for ways to assist their companies in getting even more from additional features and capabilities. 
-
-
-
-The exam covers the breadth of applications, the features and functions available to an end user, and the configuration and management options available to an administrator across the Sales, Service, and Collaboration Clouds.",
+    description: "The Salesforce Certified Platform Administrator exam is designed for individuals who have experience with Salesforce and continuously look for ways to assist their companies in getting even more from additional features and capabilities. The exam covers the breadth of applications, the features and functions available to an end user, and the configuration and management options available to an administrator across the Sales, Service, and Collaboration Clouds.",
     questionCount: 380,
     lastUpdated: "Dec-24",
     difficulty: "Intermediate",
@@ -776,31 +381,8 @@ The exam covers the breadth of applications, the features and functions availabl
     originalPrice: 59,
     badge: "Best Seller",
     language: "English, Japanese",
-    examDetails: "<ul>
-            <li><span>Content:</span> 60 multiple-choice/multiple-select questions and five non-scored questions</li>
-            <li><span>Time allotted:</span> 105 minutes</li>
-            <li><span>Passing score:</span> English version 68%; Japanese version 65%</li>
-            <li><span>Registration fee:</span> USD 200 plus applicable taxes as required per local law; JPY 30,000</li>
-            <li><span>Retake fee:</span> USD 100 plus applicable taxes as required per local law; JPY 30,000</li>
-            <li><span>Prerequisite:</span> None</li>
-        </ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><span>Content:</span> 60 multiple-choice/multiple-select questions and five non-scored questions</li> <li><span>Time allotted:</span> 105 minutes</li> <li><span>Passing score:</span> English version 68%; Japanese version 65%</li> <li><span>Registration fee:</span> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><span>Retake fee:</span> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><span>Prerequisite:</span> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -820,31 +402,8 @@ The exam covers the breadth of applications, the features and functions availabl
     price: 45,
     originalPrice: 69,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and 5 non-scored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li>
-  <li><strong>Passing score:</strong> 65%</li>
-  <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> Salesforce Certified Platform Administrator</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and 5 non-scored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 65%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> Salesforce Certified Platform Administrator</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -864,31 +423,8 @@ The exam covers the breadth of applications, the features and functions availabl
     price: 25,
     originalPrice: 49,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and five unscored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes (time allows for unscored questions)</li>
-  <li><strong>Passing score:</strong> English version 78%; Japanese version 67%</li>
-  <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> Salesforce Certified Platform Administrator</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and five unscored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes (time allows for unscored questions)</li> <li><strong>Passing score:</strong> English version 78%; Japanese version 67%</li> <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> Salesforce Certified Platform Administrator</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -900,11 +436,7 @@ The exam covers the breadth of applications, the features and functions availabl
     certificationPrice: "$200.00, ¥30,000",
     aboutCertification: "Certified Tableau Server Administrators have a comprehensive understanding of Tableau Server functionality in a single-machine environment and approximately 6 months of experience.",
     id: "salesforce-certified-tableau-server-administrator",
-    description: "The Salesforce Certified Tableau Server Administrator certification is intended for individuals who have comprehensive knowledge and skills related to Tableau Server functionality in a single-machine environment.
-
-
-
-This credential validates core Tableau knowledge of employees, partners, customers, and freelancers, who need to work with various Tableau products including Tableau Desktop and Tableau Server.",
+    description: "The Salesforce Certified Tableau Server Administrator certification is intended for individuals who have comprehensive knowledge and skills related to Tableau Server functionality in a single-machine environment. This credential validates core Tableau knowledge of employees, partners, customers, and freelancers, who need to work with various Tableau products including Tableau Desktop and Tableau Server.",
     questionCount: 280,
     lastUpdated: "Dec-24",
     difficulty: "Intermediate",
@@ -912,31 +444,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     price: 25,
     originalPrice: 49,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 55 multiple-choice and multiple-select items</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 64%</li>
-  <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 55 multiple-choice and multiple-select items</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 64%</li> <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -957,31 +466,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     originalPrice: 39,
     badge: "Best Seller",
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 40 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 60%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 40 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 60%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1001,31 +487,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     price: 25,
     originalPrice: 39,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 70%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 70%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1045,31 +508,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     price: 35,
     originalPrice: 39,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 66%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 66%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1089,31 +529,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     price: 29,
     originalPrice: 45,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 55 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 61%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 55 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 61%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1134,31 +551,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     originalPrice: 59,
     badge: "Best Seller",
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 67%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 67%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1178,31 +572,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     price: 35,
     originalPrice: 59,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 70%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 70%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1222,31 +593,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     price: 35,
     originalPrice: 59,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 68%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 68%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1266,31 +614,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     price: 25,
     originalPrice: 39,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li>
-  <li><strong>Passing score:</strong> 70%</li>
-  <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 50 multiple-choice/multiple-select questions</li> <li><strong>Time allotted to complete the exam:</strong> 75 minutes</li> <li><strong>Passing score:</strong> 70%</li> <li><strong>Registration fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Retake fee:</strong> USD 150, plus applicable taxes as required per local law; JPY 20,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1310,34 +635,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     price: 29,
     originalPrice: 55,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice questions and up to five unscored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li>
-  <li><strong>Passing score:</strong> 73%</li>
-  <li>
-    <strong>Registration fee:</strong>
-    Free; Effective Dec 31, 2025, 4 p.m. PT: USD 200 plus applicable taxes as required per local law; JPY 30,000
-  </li>
-  <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice questions and up to five unscored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 73%</li> <li> <strong>Registration fee:</strong> Free; Effective Dec 31, 2025, 4 p.m. PT: USD 200 plus applicable taxes as required per local law; JPY 30,000 </li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1358,35 +657,8 @@ This credential validates core Tableau knowledge of employees, partners, custome
     originalPrice: 59,
     badge: "Best Seller",
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and four non-scored items</li>
-  <li><strong>Time allotted to complete the exam:</strong> 120 minutes</li>
-  <li><strong>Passing score:</strong> 58%</li>
-  <li><strong>Registration fee:</strong> USD 400 plus applicable taxes as required per local law; JPY 60,000</li>
-  <li><strong>Retake fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 60,000</li>
-  <li>
-    <strong>Prerequisites:</strong>
-    Salesforce Certified Platform App Builder, Salesforce Certified Platform Developer,
-    Salesforce Certified Platform Data Architect, Salesforce Certified Platform Sharing and Visibility Architect
-  </li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and four non-scored items</li> <li><strong>Time allotted to complete the exam:</strong> 120 minutes</li> <li><strong>Passing score:</strong> 58%</li> <li><strong>Registration fee:</strong> USD 400 plus applicable taxes as required per local law; JPY 60,000</li> <li><strong>Retake fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 60,000</li> <li> <strong>Prerequisites:</strong> Salesforce Certified Platform App Builder, Salesforce Certified Platform Developer, Salesforce Certified Platform Data Architect, Salesforce Certified Platform Sharing and Visibility Architect </li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1398,11 +670,7 @@ This credential validates core Tableau knowledge of employees, partners, custome
     certificationPrice: "$20.00, ¥3,000",
     aboutCertification: "Practice Test: Certified Platform Administrators are Salesforce pros who are always looking for ways to help their companies get even more out of the Salesforce Platform through additional features and capabilities.",
     id: "salesforce-certified-platform-administrator-practice-test",
-    description: "his practice test will not be available for registration after December 15, 2025. The content of this practice test no longer provides accurate preparation for the Salesforce Certified Platform Administrator exam. Review the exam page for more information on how to prepare. 
-
-
-
-If you have already registered for this exam but not completed it yet, you may choose to keep your registration or cancel it. Review the Salesforce Certification Exam Reschedule and Cancellation Policy.",
+    description: "his practice test will not be available for registration after December 15, 2025. The content of this practice test no longer provides accurate preparation for the Salesforce Certified Platform Administrator exam. Review the exam page for more information on how to prepare. If you have already registered for this exam but not completed it yet, you may choose to keep your registration or cancel it. Review the Salesforce Certification Exam Reschedule and Cancellation Policy.",
     questionCount: 180,
     lastUpdated: "Jan-25",
     difficulty: "Intermediate",
@@ -1410,34 +678,8 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 15,
     originalPrice: 29,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and five non-scored questions</li>
-  <li><strong>Delivery options:</strong> Unproctored exam delivered online</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li>
-  <li><strong>Passing score:</strong> 65%</li>
-  <li>
-    <strong>Registration and retake fee:</strong>
-    USD 20 plus applicable taxes as required per local law; JPY 3,000
-  </li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and five non-scored questions</li> <li><strong>Delivery options:</strong> Unproctored exam delivered online</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 65%</li> <li> <strong>Registration and retake fee:</strong> USD 20 plus applicable taxes as required per local law; JPY 3,000 </li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1457,31 +699,8 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 15,
     originalPrice: 29,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 40 multiple-choice questions and up to five non-scored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 70 minutes</li>
-  <li><strong>Passing score:</strong> 62%</li>
-  <li><strong>Registration fee:</strong> USD 75 plus applicable taxes as required per local law; JPY 10,000</li>
-  <li><strong>Retake fee:</strong> Free</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 40 multiple-choice questions and up to five non-scored questions</li> <li><strong>Time allotted to complete the exam:</strong> 70 minutes</li> <li><strong>Passing score:</strong> 62%</li> <li><strong>Registration fee:</strong> USD 75 plus applicable taxes as required per local law; JPY 10,000</li> <li><strong>Retake fee:</strong> Free</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1501,34 +720,8 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 25,
     originalPrice: 39,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and five unscored questions</li>
-  <li>
-    <strong>Time allotted to complete the exam:</strong>
-    105 minutes (time allows for unscored questions)
-  </li>
-  <li><strong>Passing score:</strong> 70%</li>
-  <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and five unscored questions</li> <li> <strong>Time allotted to complete the exam:</strong> 105 minutes (time allows for unscored questions) </li> <li><strong>Passing score:</strong> 70%</li> <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1548,31 +741,8 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 39,
     originalPrice: 55,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and up to five non-scored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li>
-  <li><strong>Passing score:</strong> 65%</li>
-  <li><strong>Registration fee:</strong> USD 400 plus applicable taxes as required per local law; JPY 60,000</li>
-  <li><strong>Retake fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 60,000</li>
-  <li><strong>Prerequisite:</strong> Salesforce Certified B2C Commerce Cloud Developer</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and up to five non-scored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 65%</li> <li><strong>Registration fee:</strong> USD 400 plus applicable taxes as required per local law; JPY 60,000</li> <li><strong>Retake fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 60,000</li> <li><strong>Prerequisite:</strong> Salesforce Certified B2C Commerce Cloud Developer</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1592,31 +762,8 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 35,
     originalPrice: 59,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 scored multiple-choice questions and up to five non-scored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li>
-  <li><strong>Passing score:</strong> 65%</li>
-  <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 scored multiple-choice questions and up to five non-scored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 65%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1637,34 +784,8 @@ If you have already registered for this exam but not completed it yet, you may c
     originalPrice: 55,
     badge: "Best Seller",
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice questions and up to five non-scored questions</li>
-  <li>
-    <strong>Time allotted to complete the exam:</strong>
-    105 minutes (time allows for unscored questions)
-  </li>
-  <li><strong>Passing score:</strong> 72%</li>
-  <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice questions and up to five non-scored questions</li> <li> <strong>Time allotted to complete the exam:</strong> 105 minutes (time allows for unscored questions) </li> <li><strong>Passing score:</strong> 72%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ,
 {
@@ -1684,34 +805,10 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 35,
     originalPrice: 59,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and up to five non-scored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li>
-  <li><strong>Passing score:</strong> 65%</li>
-  <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
-}
-,
-{
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions and up to five non-scored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 65%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
+},
+    {
     title: "Salesforce Certified CRM Analytics and Einstein Discovery Consultant",
     IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
     certificationIMG: "https://blogger.googleusercontent.com/img/a/AVvXsEiCA888SyJLwjBNOtRzp7YakX0rUsfFqupD2jWuE8cmgapTo2UaC9eHrDnXhAAWlTZtk1KzcB7CSbd-F28uKQ8Zr5Gpd5U4_F4gtLSDE0Ez_HaouQd1Eg1rTASgb9a0VdjXBRLSvaGaLKncooTPSGYozApfUznaplCB7rcaLe_OKg8rdHq83ug6wKNXzBjL=s16000",
@@ -1728,33 +825,9 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 29,
     originalPrice: 45,
     language: "English",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice questions and up to five unscored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li>
-  <li><strong>Passing score:</strong> 65%</li>
-  <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
-}
-,
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice questions and up to five unscored questions</li> <li><strong>Time allotted to complete the exam:</strong> 90 minutes</li> <li><strong>Passing score:</strong> 65%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
+},
 {
     title: "Salesforce Certified Data Cloud Consultant",
     IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
@@ -1772,33 +845,9 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 25,
     originalPrice: 39,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions, and up to five non-scored questions</li>
-  <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li>
-  <li><strong>Passing score:</strong> 62%</li>
-  <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> None</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
-}
-,
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice/multiple-select questions, and up to five non-scored questions</li> <li><strong>Time allotted to complete the exam:</strong> 105 minutes</li> <li><strong>Passing score:</strong> 62%</li> <li><strong>Registration fee:</strong> USD 200 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100 plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> None</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
+},
 {
     title: "Salesforce Certified Education Cloud Consultant",
     IconURL: "https://blogger.googleusercontent.com/img/a/AVvXsEjWogM1HyGi9IU6bv1bs-XZxFhWbelZBTaws4Dp4e_6tL0BQg0LcmfxbNQkSFv1gcI3Z5CSC5vZByb8arKI3EX9oB1IUHqYaR4nCEDjITNXXxi4i48QaVzyZ6Uvhoy02CSoOZJJ09udIJD0oUE1HKY0UrkHkQHE6DLdto58hU2vGeFL5md3BLdJHjeX2dx0=s16000",
@@ -1816,34 +865,8 @@ If you have already registered for this exam but not completed it yet, you may c
     price: 35,
     originalPrice: 49,
     language: "English, Japanese",
-    examDetails: "<ul>
-  <li><strong>Content:</strong> 60 multiple-choice questions and up to five non-scored questions</li>
-  <li>
-    <strong>Time allotted to complete the exam:</strong>
-    105 minutes (time allows for unscored questions)
-  </li>
-  <li><strong>Passing score:</strong> 67%</li>
-  <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li>
-  <li><strong>Prerequisite:</strong> Salesforce Certified Platform Administrator credential</li>
-</ul>",
-    resources: "<ul>
-  <li>
-    <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\">
-      Salesforce Certification Code of Conduct
-    </a>
-  </li>
-  <li>
-    <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\">
-      Exam Reschedule and Cancellation Policies
-    </a>
-  </li>
-  <li>
-    <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\">
-      How to Schedule a Salesforce Exam
-    </a>
-  </li>
-</ul>",
+    examDetails: "<ul> <li><strong>Content:</strong> 60 multiple-choice questions and up to five non-scored questions</li> <li> <strong>Time allotted to complete the exam:</strong> 105 minutes (time allows for unscored questions) </li> <li><strong>Passing score:</strong> 67%</li> <li><strong>Registration fee:</strong> USD 200, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Retake fee:</strong> USD 100, plus applicable taxes as required per local law; JPY 30,000</li> <li><strong>Prerequisite:</strong> Salesforce Certified Platform Administrator credential</li> </ul>",
+    resources: "<ul> <li> <a href=\"https://www.salesforce.com/company/legal/certification-program-agreement/\" target=\"_blank\"> Salesforce Certification Code of Conduct </a> </li> <li> <a href=\"https://www.salesforce.com/trailhead/credentials/exam-reschedule-cancellation\" target=\"_blank\"> Exam Reschedule and Cancellation Policies </a> </li> <li> <a href=\"https://trailhead.salesforce.com/help?article=Schedule-or-Reschedule-an-Exam\" target=\"_blank\"> How to Schedule a Salesforce Exam </a> </li> </ul>",
 }
 ];
 
