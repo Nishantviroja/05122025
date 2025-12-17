@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import integrations from "@/data/integrations";
 
 interface WhatsAppPopupProps {
@@ -29,10 +30,19 @@ export default function WhatsAppPopup({
       // Generate QR code using a QR code API
       const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(whatsappUrl)}`;
       setQrCodeUrl(qrApiUrl);
-    }
-  }, [isOpen, certificationTitle, price]);
 
-  if (!isOpen) return null;
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Restore body scroll when modal is closed
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup: restore scroll on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen, certificationTitle, price]);
 
   const message = encodeURIComponent(
     `Hi, I want to buy ${certificationTitle} Dumps for $${price}. Please provide more details.`
@@ -43,8 +53,13 @@ export default function WhatsAppPopup({
     window.open(whatsappUrl, "_blank");
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+  if (!isOpen) return null;
+
+  const modalContent = (
+    <div 
+      className="fixed inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+      style={{ zIndex: 9999 }}
+    >
       <div className="relative bg-white rounded-2xl p-6 max-w-2xl w-full mx-4 shadow-2xl">
         {/* Close Button */}
         <button
@@ -132,5 +147,12 @@ export default function WhatsAppPopup({
       </div>
     </div>
   );
+
+  // Render modal using portal to ensure it's above all content
+  if (typeof window !== 'undefined') {
+    return createPortal(modalContent, document.body);
+  }
+  
+  return null;
 }
 

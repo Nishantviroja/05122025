@@ -9,7 +9,21 @@ import CertificationCard from "@/components/ui/CertificationCard";
 import { SEO_CONFIG } from '@/data/seo';
 
 export default function HomePage() {
-  const featuredDumps = certifications.slice(0, 6);
+  // Separate Best Sellers and other certifications, then combine (Best Sellers first)
+  const bestSellers = certifications.filter(cert => cert.badge === "Best Seller");
+  const otherCerts = certifications.filter(cert => cert.badge !== "Best Seller");
+  
+  // Combine: Best Sellers first, then others, limit to 6 total
+  const featuredDumps = [...bestSellers, ...otherCerts].slice(0, 6);
+
+  // Smooth scroll to featured dumps section
+  const scrollToFeatured = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('featured-dumps');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   // Schema markup for homepage
   const schemaMarkup = {
@@ -56,22 +70,23 @@ export default function HomePage() {
               {/* Left Content */}
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-[#032D60] mb-6">
-                  Ace Your{" "}
+                  Clear{" "}
                   <span className="text-[#0176D3]">Salesforce</span>{" "}
-                  Certification
+                  Certifications with Confidence
                 </h1>
                 <p className="text-lg text-[#444444] mb-8 leading-relaxed">
-                  Learn in-demand skills with our premium exam dumps. Pass your 
-                  certification on the first attempt with real questions and 
-                  verified answers.
+                  Unlock your career potential with our comprehensive exam preparation materials. 
+                  Join thousands of professionals who passed their Salesforce certifications on the 
+                  first try using our verified exam dumps and expert-curated study resources.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Link
-                    href="/dumps"
-                    className="inline-flex items-center px-6 py-3 bg-[#0176D3] text-white font-semibold rounded hover:bg-[#014486] transition-colors"
+                  <a
+                    href="#featured-dumps"
+                    onClick={scrollToFeatured}
+                    className="inline-flex items-center px-6 py-3 bg-[#0176D3] text-white font-semibold rounded hover:bg-[#014486] transition-colors cursor-pointer"
                   >
                     Browse Exam Dumps
-                  </Link>
+                  </a>
                   <Link
                     href="/dumps"
                     className="inline-flex items-center px-6 py-3 border-2 border-[#0176D3] text-[#0176D3] font-semibold rounded hover:bg-[#0176D3]/5 transition-colors"
@@ -125,7 +140,7 @@ export default function HomePage() {
         </section>
 
         {/* Featured Exam Dumps */}
-        <section className="bg-white py-16">
+        <section id="featured-dumps" className="bg-white py-16 scroll-mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl md:text-3xl font-bold text-[#032D60] mb-8 text-center">
               Featured Exam Dumps
@@ -138,7 +153,7 @@ export default function HomePage() {
                   id={dump.id}
                   title={dump.title}
                   category={dump.category}
-                  description={dump.description}
+                  aboutCertification={dump.aboutCertification}
                   questionCount={dump.questionCount}
                   lastUpdated={dump.lastUpdated}
                   difficulty={dump.difficulty}

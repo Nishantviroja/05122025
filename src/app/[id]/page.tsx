@@ -8,10 +8,12 @@ import {
   CheckIcon, 
   DownloadIcon,
   ShieldIcon,
-  ArrowRightIcon
+  ArrowRightIcon,
+  CrownIcon
 } from "@/components/icons";
 import { certifications } from "@/data/certifications";
 import BuyButton from "@/components/ui/BuyButton";
+import CertificationCard from "@/components/ui/CertificationCard";
 
 interface DumpDetailPageProps {
   params: Promise<{ id: string }>;
@@ -85,6 +87,10 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
 
   const relatedCerts = certifications
     .filter((c) => c.category === certification.category && c.id !== certification.id)
+    .slice(0, 3);
+
+  const bestSellerCerts = certifications
+    .filter((c) => c.badge === "Best Seller" && c.id !== certification.id)
     .slice(0, 3);
 
   const features = [
@@ -161,28 +167,36 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
       />
       <div className="min-h-screen bg-sf-gray-100">
       {/* Header */}
-      <section className="relative bg-[#FFFFFF] py-8 md:py-12 min-h-[280px] md:min-h-[330px]">
+      <section className="relative bg-[#FFFFFF] py-8 md:py-12 min-h-[280px] md:min-h-[330px]" style={{ zIndex: 1 }}>
         {/* Gradient Overlay - Back Layer */}
         <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0, background: 'linear-gradient(180deg, #fff 29.72%, #c6e9ff 100%)' }}></div>
 
         {/* Content - Flex Layout */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ zIndex: 3 }}>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ zIndex: 1 }}>
           
           
           {/* Flex Container - Mobile: Column, Desktop: Row */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8">
             {/* Left Side - Certification Info */}
             <div className="flex-1 order-2 md:order-1">
-              <span className="inline-block border-2 border-[#0176D3] text-[#0176D3] text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full mb-2 md:mb-3">
-                {certification.category}
-              </span>
+              <div className="flex items-center gap-2 mb-2 md:mb-3 flex-wrap">
+                <span className="inline-block border-2 border-[#0176D3] text-[#0176D3] text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full">
+                  {certification.category}
+                </span>
+                {certification.badge && (
+                  <div className="flex items-center gap-1.5 bg-[#0176D3] text-white text-xs sm:text-sm font-normal px-2 sm:px-3 py-1 rounded-full">
+                    <CrownIcon className="w-4 h-4 text-white" />
+                    <span className="text-center">{certification.badge}</span>
+                  </div>
+                )}
+              </div>
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#032D60] mb-2 md:mb-3 leading-tight">
                 {certification.title} Dumps
               </h1>
-               {/* Description */}
-               {certification.description && (
+               {/* About Certification */}
+               {certification.aboutCertification && (
                 <p className="text-[#444444] text-sm sm:text-base mb-2 md:mb-6 leading-relaxed">
-                  {certification.description}
+                  {certification.aboutCertification}
                 </p>
               )}
               <div className="flex items-center gap-1 mb-3 md:mb-4">
@@ -269,6 +283,15 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
                     </h2>
                     <p className="text-[#444444] leading-relaxed">
                       {certification.aboutCertification}
+                    </p>
+                  </div>
+                )}
+
+                {/* Description */}
+                {certification.description && (
+                  <div className="mb-4">
+                    <p className="text-[#444444] leading-relaxed">
+                      {certification.description}
                     </p>
                   </div>
                 )}
@@ -413,7 +436,7 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
         </div>
       </section>
 
-      {/* Related Dumps */}
+      {/* Related Certifications */}
       {relatedCerts.length > 0 && (
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -429,36 +452,62 @@ export default async function DumpDetailPage({ params }: DumpDetailPageProps) {
                 <ArrowRightIcon className="w-4 h-4" />
               </Link>
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {relatedCerts.map((cert) => (
-                <Link
+                <CertificationCard
                   key={cert.id}
-                  href={`/${cert.id}`}
-                  className="block bg-white rounded-xl border border-[#E5E5E5] p-6 hover:shadow-lg transition-shadow group"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    {cert.certificationIMG && (
-                      <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-gray-100 flex-shrink-0">
-                        <Image
-                          src={cert.certificationIMG}
-                          alt={cert.title}
-                          width={40}
-                          height={40}
-                          className="w-full h-full object-contain"
-                          unoptimized
-                        />
-                      </div>
-                    )}
-                    <span className="text-sm text-[#5C5C5C]">Exam Dump</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-[#0176D3] group-hover:underline mb-3">
-                    {cert.title}
-                  </h3>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-[#5C5C5C]">{cert.questionCount}+ Questions</span>
-                    <span className="text-lg font-bold text-[#032D60]">${cert.price}</span>
-                  </div>
-                </Link>
+                  id={cert.id}
+                  title={cert.title}
+                  category={cert.category}
+                  aboutCertification=""
+                  questionCount={cert.questionCount}
+                  lastUpdated={cert.lastUpdated}
+                  difficulty={cert.difficulty}
+                  rating={cert.rating}
+                  price={cert.price}
+                  originalPrice={cert.originalPrice}
+                  badge={cert.badge}
+                  certificationIMG={cert.certificationIMG}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Best Seller Certifications */}
+      {bestSellerCerts.length > 0 && (
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#032D60]">
+                Best Seller Certifications
+              </h2>
+              <Link
+                href="/dumps"
+                className="text-[#0176D3] font-semibold flex items-center gap-1 hover:gap-2 transition-all"
+              >
+                View All
+                <ArrowRightIcon className="w-4 h-4" />
+              </Link>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {bestSellerCerts.map((cert) => (
+                <CertificationCard
+                  key={cert.id}
+                  id={cert.id}
+                  title={cert.title}
+                  category={cert.category}
+                  aboutCertification=""
+                  questionCount={cert.questionCount}
+                  lastUpdated={cert.lastUpdated}
+                  difficulty={cert.difficulty}
+                  rating={cert.rating}
+                  price={cert.price}
+                  originalPrice={cert.originalPrice}
+                  badge={cert.badge}
+                  certificationIMG={cert.certificationIMG}
+                />
               ))}
             </div>
           </div>

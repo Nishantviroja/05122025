@@ -6,9 +6,8 @@ import {
   UsersIcon, 
   StarIcon
 } from "@/components/icons";
-import { SEO_CONFIG } from '@/data/seo';
 
-const baseUrl = SEO_CONFIG.siteUrl;
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://salesforcedumps.com';
 
 export const metadata: Metadata = {
   title: "About Us - Salesforce Dumps",

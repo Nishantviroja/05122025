@@ -24,7 +24,7 @@ export default function DumpsPage() {
         (cert) =>
           cert.title.toLowerCase().includes(query) ||
           cert.category.toLowerCase().includes(query) ||
-          cert.description.toLowerCase().includes(query)
+          (cert.description?.toLowerCase().includes(query) ?? false)
       );
     }
 
@@ -168,7 +168,7 @@ export default function DumpsPage() {
                     id={dump.id}
                     title={dump.title}
                     category={dump.category}
-                    description={dump.description}
+                    aboutCertification={dump.aboutCertification}
                     questionCount={dump.questionCount}
                     lastUpdated={dump.lastUpdated}
                     difficulty={dump.difficulty}

@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRightIcon, QuestionIcon, ClockIcon, StarIcon } from "@/components/icons";
+import { ArrowRightIcon, QuestionIcon, ClockIcon, StarIcon, CrownIcon } from "@/components/icons";
 
 export interface CertificationCardProps {
   id: string;
   title: string;
   category: string;
-  description: string;
   questionCount: number;
   lastUpdated: string;
   difficulty: "Beginner" | "Intermediate" | "Advanced" | "Expert";
@@ -17,7 +16,8 @@ export interface CertificationCardProps {
   certificationIMG?: string;
   language?: string;
   certificationPrice?: string;
-  aboutCertification?: string;
+  aboutCertification: string;
+  description?: string;
   examDetails?: string;
   resources?: string;
   scheduleExamUrl?: string;
@@ -34,7 +34,7 @@ export default function CertificationCard({
   id,
   title,
   category,
-  description,
+  aboutCertification,
   questionCount,
   lastUpdated,
   difficulty,
@@ -47,11 +47,11 @@ export default function CertificationCard({
   return (
     <Link href={`/${id}`} className="block group">
       <article className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-[#E5E5E5] h-full flex flex-col overflow-hidden relative">
-        {/* Badge - Simple Design with Fading Dot */}
+        {/* Badge - Simple Design with Crown Icon */}
         {badge && (
           <div className="absolute top-4 right-4 z-20">
-            <div className="flex items-center gap-1.5 bg-[#0176D3] text-white text-[12px]  font-medium px-2.5 py-0.5 rounded-full">
-              {/* Fading dot */}
+            <div className="flex items-center gap-1.5 bg-[#0176D3] text-white text-[12px] font-normal px-2.5 py-0.5 rounded-full">
+              <CrownIcon className="w-4 h-4 text-white" />
               <span className="text-center">{badge}</span>
             </div>
           </div>
@@ -103,12 +103,14 @@ export default function CertificationCard({
           </div>
         </div>
 
-        {/* Description Section - Centered */}
-        <div className="p-6 pt-0 pb-4">
-          <p className="text-[#444444] text-sm leading-relaxed line-clamp-3 text-center">
-            {description}
-          </p>
-        </div>
+        {/* About Certification Section - Centered */}
+        {aboutCertification && (
+          <div className="p-6 pt-0 pb-4">
+            <p className="text-[#444444] text-sm leading-relaxed line-clamp-3 text-center">
+              {aboutCertification}
+            </p>
+          </div>
+        )}
 
         {/* Pricing Section - Prominent */}
         <div className="p-6 pt-5 mt-auto bg-white border-t-2 border-[#E5E5E5]">
