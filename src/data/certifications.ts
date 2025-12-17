@@ -661,7 +661,7 @@ export const certifications: CertificationCardProps[] = [
     description: "The Salesforce Certified Platform Foundations credential is designed for individuals who understand reporting, user administration, sharing, customization, and data management at a foundational level. Candidates should be familiar with Salesforce as a user or a learner and interested in assisting with fundamental functionality in the current version of Salesforce.",
     questionCount: 180,
     lastUpdated: "Jan-25",
-    difficulty: "Foundational",
+    difficulty: "Beginner",
     rating: 3,
     price: 15,
     originalPrice: 29,
