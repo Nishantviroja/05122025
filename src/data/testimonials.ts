@@ -1,0 +1,43 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    role: "Sales Manager",
+    company: "TechCorp",
+    content: "These exam dumps were a game-changer! Passed my Admin certification on the first try with 95%. Highly recommend!",
+    rating: 5,
+    avatar: "https://i.pravatar.cc/150?img=1",
+    certification: "Administrator",
+  },
+  {
+    id: 2,
+    name: "Michael Chen",
+    role: "Developer",
+    company: "CloudWorks",
+    content: "Outstanding preparation material! The questions were very similar to the actual exam. Worth every penny!",
+    rating: 5,
+    avatar: "https://i.pravatar.cc/150?img=13",
+    certification: "Platform Developer I",
+  },
+  {
+    id: 3,
+    name: "Emily Rodriguez",
+    role: "Consultant",
+    company: "Digital Solutions",
+    content: "Excellent resource for certification prep. Clear explanations and up-to-date questions helped me succeed!",
+    rating: 5,
+    avatar: "https://i.pravatar.cc/150?img=5",
+    certification: "Sales Cloud Consultant",
+  },
+  {
+    id: 4,
+    name: "David Park",
+    role: "Business Analyst",
+    company: "Enterprise Inc",
+    content: "Best investment for my career! Passed with confidence thanks to these comprehensive study materials.",
+    rating: 5,
+    avatar: "https://i.pravatar.cc/150?img=12",
+    certification: "Business Analyst",
+  },
+];
+

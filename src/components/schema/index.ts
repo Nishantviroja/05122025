@@ -16,4 +16,10 @@ export {
   generateCollectionPageSchema,
   type ItemListProduct 
 } from './itemListSchema';
+export {
+  generateReviewSchema,
+  generateAggregateRatingSchema,
+  generateReviewsCollectionSchema,
+  type ReviewSchemaProps
+} from './reviewSchema';
 

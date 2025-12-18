@@ -43,7 +43,7 @@ export default function ReviewModal({ isOpen, onClose }: ReviewModalProps) {
       setRating(0);
       setReview("");
       onClose();
-    }, 3000);
+    }, 2000);
   };
 
   if (!isOpen || !mounted) return null;
@@ -62,15 +62,15 @@ export default function ReviewModal({ isOpen, onClose }: ReviewModalProps) {
 
       {/* Modal */}
       <div
-        className="relative bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto"
+        className="relative bg-white rounded-xl shadow-lg w-full max-w-lg max-h-[90vh] overflow-y-auto"
         style={{ zIndex: 10000 }}
       >
         {!isSubmitted ? (
           <>
             {/* Header */}
-            <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 rounded-t-2xl">
+            <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 rounded-t-xl">
               <div className="flex items-center justify-between">
-                <h3 className="text-2xl font-bold text-[#032D60]">Write a Review</h3>
+                <h3 className="text-xl font-bold text-[#032D60]">Write a Review</h3>
                 <button
                   onClick={onClose}
                   className="text-gray-400 hover:text-gray-600 transition-colors"
@@ -83,43 +83,44 @@ export default function ReviewModal({ isOpen, onClose }: ReviewModalProps) {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="p-6 space-y-5">
-              {/* Name */}
-              <div>
-                <label className="block text-sm font-medium text-[#032D60] mb-2">
-                  Your Name *
-                </label>
-                <input
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                  placeholder="John Doe"
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0176D3] focus:border-transparent"
-                />
-              </div>
+            <form onSubmit={handleSubmit} className="p-6 space-y-4">
+              {/* Name and Role in One Row */}
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="block text-sm font-medium text-[#444444] mb-1.5">
+                    Your Name *
+                  </label>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    placeholder="John Doe"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0176D3] text-[#333333]"
+                  />
+                </div>
 
-              {/* Role */}
-              <div>
-                <label className="block text-sm font-medium text-[#032D60] mb-2">
-                  Your Role *
-                </label>
-                <input
-                  type="text"
-                  value={role}
-                  onChange={(e) => setRole(e.target.value)}
-                  required
-                  placeholder="e.g., Salesforce Administrator"
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0176D3] focus:border-transparent"
-                />
+                <div>
+                  <label className="block text-sm font-medium text-[#444444] mb-1.5">
+                    Your Role *
+                  </label>
+                  <input
+                    type="text"
+                    value={role}
+                    onChange={(e) => setRole(e.target.value)}
+                    required
+                    placeholder="SF Admin"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0176D3] text-[#333333]"
+                  />
+                </div>
               </div>
 
               {/* Rating */}
               <div>
-                <label className="block text-sm font-medium text-[#032D60] mb-2">
+                <label className="block text-sm font-medium text-[#444444] mb-1.5">
                   Rating *
                 </label>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <button
                       key={star}
@@ -127,7 +128,6 @@ export default function ReviewModal({ isOpen, onClose }: ReviewModalProps) {
                       onClick={() => setRating(star)}
                       onMouseEnter={() => setHoveredRating(star)}
                       onMouseLeave={() => setHoveredRating(0)}
-                      className="transition-transform hover:scale-110"
                     >
                       <svg
                         className={`w-8 h-8 ${
@@ -141,27 +141,25 @@ export default function ReviewModal({ isOpen, onClose }: ReviewModalProps) {
                       </svg>
                     </button>
                   ))}
-                  <span className="ml-2 text-sm text-[#5C5C5C]">
-                    {rating > 0 ? `${rating} star${rating > 1 ? 's' : ''}` : 'Select rating'}
-                  </span>
                 </div>
               </div>
 
               {/* Review */}
               <div>
-                <label className="block text-sm font-medium text-[#032D60] mb-2">
+                <label className="block text-sm font-medium text-[#444444] mb-1.5">
                   Your Review *
                 </label>
                 <textarea
                   value={review}
                   onChange={(e) => setReview(e.target.value)}
                   required
-                  rows={5}
-                  placeholder="Share your experience with our exam dumps..."
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0176D3] focus:border-transparent resize-none"
+                  rows={4}
+                  maxLength={500}
+                  placeholder="Share your experience..."
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#0176D3] resize-none text-[#333333]"
                 />
-                <p className="text-xs text-[#5C5C5C] mt-1">
-                  {review.length}/500 characters
+                <p className="text-xs text-gray-500 mt-1">
+                  {review.length}/500
                 </p>
               </div>
 
@@ -169,7 +167,7 @@ export default function ReviewModal({ isOpen, onClose }: ReviewModalProps) {
               <button
                 type="submit"
                 disabled={!name || !role || rating === 0 || !review}
-                className="w-full bg-[#0176D3] text-white font-semibold py-3 rounded-lg hover:bg-[#014486] transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
+                className="w-full bg-[#0176D3] text-white font-semibold py-2.5 rounded-lg hover:bg-[#014486] transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed"
               >
                 Submit Review
               </button>
@@ -179,16 +177,13 @@ export default function ReviewModal({ isOpen, onClose }: ReviewModalProps) {
           // Success Message
           <div className="p-8 text-center">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-[#032D60] mb-2">Thank You!</h3>
-            <p className="text-[#444444] mb-4">
-              Your review has been submitted successfully and is waiting for approval.
-            </p>
-            <p className="text-sm text-[#5C5C5C]">
-              We'll review and publish it shortly.
+            <p className="text-[#444444]">
+              Your review has been submitted and is waiting for approval.
             </p>
           </div>
         )}

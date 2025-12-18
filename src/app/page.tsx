@@ -385,35 +385,33 @@ export default function HomePage() {
               </div>
 
               {/* Add Review Card */}
-              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-12 h-12 bg-[#0176D3] rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                    </svg>
+              <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border-2 border-dashed border-[#0176D3]">
+                {/* People Avatars */}
+                <div className="flex items-center justify-center mb-4 -space-x-2">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 border-2 border-white flex items-center justify-center text-white font-semibold text-sm">
+                    JD
+                  </div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-green-600 border-2 border-white flex items-center justify-center text-white font-semibold text-sm">
+                    SM
+                  </div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 border-2 border-white flex items-center justify-center text-white font-semibold text-sm">
+                    AR
+                  </div>
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 border-2 border-white flex items-center justify-center text-white font-semibold text-sm">
+                    +10K
                   </div>
                 </div>
                 
-                <p className="text-[#032D60] font-semibold text-lg mb-2 text-center">Share Your Experience</p>
-                <p className="text-[#444444] text-sm mb-4 text-center">
-                  Join <strong>106+</strong> satisfied customers who have shared their success stories with us.
+                <p className="text-[#032D60] font-bold text-xl mb-2 text-center">Share Your Success!</p>
+                <p className="text-[#444444] text-sm mb-3 text-center leading-relaxed">
+                  <strong className="text-[#0176D3]">10,000+</strong> professionals already shared their success stories. Your experience can inspire others on their Salesforce certification journey!
                 </p>
-                
-                <div className="flex items-center justify-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-center text-sm text-[#032D60] font-medium mb-1">4.9 out of 5</p>
-                <p className="text-center text-xs text-[#5C5C5C] mb-6">Based on 106+ reviews</p>
                 
                 <button
                   onClick={() => setIsReviewModalOpen(true)}
-                  className="w-full bg-[#0176D3] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#014486] transition-colors"
+                  className="w-full bg-[#0176D3] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#014486] transition-colors shadow-md"
                 >
-                  Add Your Review
+                  Share Your Review
                 </button>
               </div>
             </div>
